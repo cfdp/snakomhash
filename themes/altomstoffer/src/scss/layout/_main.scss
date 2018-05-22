@@ -1,0 +1,127 @@
+.layout-content {
+  padding: 5rem 3rem;
+
+  @include bp-normal {
+    max-width: 760px;
+    padding: 5rem 0;
+    margin: 0 auto 0;
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: repeat(12, 1fr);
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  @include bp-wide {
+    max-width: 1140px;
+  }
+
+  .region-content {
+    @include bp-normal {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      -ms-grid-column-span: 12;
+    }
+  }
+}
+
+.page-node-type-landing-page {
+
+  .layout-content {
+    @include bp-normal {
+      max-width: 760px;
+    }
+    @include bp-wide {
+      max-width: 1140px;
+    }
+  }
+}
+
+.page-node-type-article,
+.page-node-type-page {
+
+  .layout-content {
+    @include bp-normal {
+      padding: 0;
+    }
+  }
+
+  .region-content {
+    @include bp-normal {
+      grid-column-start: 1;
+      grid-column-end: -1;
+      -ms-grid-column-span: 12;
+      background: white;
+      margin-top: -17rem;
+      position: relative;
+      z-index: 2;
+      padding: 7.5rem 9.5rem;
+    }
+    @include bp-wide {
+      grid-column-start: 3;
+      grid-column-end: 11;
+      -ms-grid-column-span: 8;
+      -ms-grid-column: 3;
+    }
+  }
+}
+
+.page-node-type-lexicon-article {
+
+  .layout-content {
+    max-width: none;
+    padding: 0;
+  }
+
+  .region-content {
+    padding: 5rem 0 0;
+  }
+
+  #block-altomstoffer-page-title,
+  #block-altomstoffer-local-tasks,
+  .node__intro {
+    box-sizing: border-box;
+    padding: 0 3rem;
+
+    @include bp-normal {
+      width: 570px;
+      margin: auto;
+      padding: 0;
+    }
+    @include bp-wide {
+      position: relative;
+      left: -120px;
+    }
+  }
+
+  .messages {
+    box-sizing: border-box;
+    margin: 0 3rem;
+
+    @include bp-normal {
+      width: 570px;
+      margin: auto;
+    }
+    @include bp-wide {
+      position: relative;
+      left: -120px;
+    }    
+  }
+
+}
+
+.layout-post-content {
+
+  background: $color-grey-light;
+  padding: 5rem 3rem;
+
+  @include bp-normal {
+    padding: 5rem 0;
+  }
+
+  .region-post-content {
+    @include bp-normal {
+      max-width: 570px;
+      margin: auto;
+    }
+  }
+}

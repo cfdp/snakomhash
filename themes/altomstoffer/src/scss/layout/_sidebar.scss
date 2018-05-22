@@ -1,0 +1,85 @@
+.layout-sidebar {
+  background-color: $color-orange;
+  background: linear-gradient($color-orange 50%, $color-orange-dark);
+  color: white;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  padding: 15rem 5rem 5rem;
+  box-sizing: border-box;
+  z-index: 100;
+  overflow-y: auto;
+
+  @include bp-mobile {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  @include bp-normal {
+    padding: 15rem 7.5rem;
+    width: 60rem;
+    right: -60rem;
+    padding: 15rem 7.5rem;
+    transition: right 300ms ease-in-out;
+    z-index: 100;
+    background: linear-gradient($color-orange 70%, $color-orange-dark);
+
+    &.active {
+      right: 0;
+    }
+  }
+
+ .icon-close {
+    fill: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+
+    @include bp-normal {
+      top: 6rem;
+      right: 7.5rem;      
+    }
+  }
+
+  nav {
+    margin-bottom: 10rem;
+  }
+
+  .block:not(nav) {
+    margin-bottom: 5rem;
+    text-align: center;
+
+    @include bp-normal {
+      text-align: left;
+    }
+  }
+}
+
+.overlay-sidebar {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  background: rgba(0,0,0,0);
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+
+  @include bp-normal {
+    &.active {
+      background: rgba(0,0,0,0.6);
+      visibility: visible;
+    }
+  }
+}

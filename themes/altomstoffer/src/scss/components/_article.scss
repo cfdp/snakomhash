@@ -1,0 +1,141 @@
+.node--type-page.node--view-mode-full,
+.node--type-article.node--view-mode-full {
+
+  .node__content {
+    > .field--name-body {
+
+      @include bp-normal {
+        margin: auto;
+      }
+    }
+    > .field--name-field-article-author {
+      text-transform: uppercase;
+      font-weight: $font-weight-light;
+      margin-bottom: 3rem;
+    }
+
+    > .field--name-field-intro {
+      font-weight: $font-weight-bold;
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
+      color: $text-color-dark;
+    }
+
+    > .field--name-field-view {
+      margin-top: 4.5rem;
+      
+      @include bp-normal {
+        margin-left: -95px;
+        margin-right: -95px;
+      }      
+
+      @include bp-wide {
+        margin-left: -285px;
+        margin-right: -285px;
+      }
+    }
+  }
+}
+
+.node--type-article.node--view-mode-teaser {
+
+  @include clearfix();
+
+  .teaser-label {
+    font-weight: $font-weight-bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: $font-size-small;
+    color: $text-color-dark;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .field--name-field-hero {
+    float: left;
+    width: 100px;
+    margin-right: 1.5rem;
+
+    img {
+      display: block;
+    }
+  }
+  .field--name-field-article-author {
+    font-size: 1.3rem;
+    line-height: $line-height-small;
+    font-weight: $font-weight-light;
+    color: $text-color-dark;
+    margin-bottom: .75rem;
+  }
+  .title {
+    font-size: 1.8rem;
+    font-weight: $font-weight-bold;
+    color: white;
+    background: $color-orange;
+    box-shadow: 4px 0 0 0 $color-orange, -4px 0 0 0 $color-orange;
+    display: inline;
+    line-height: $line-height-small;
+  }
+}
+
+#block-views-block-related-articles-block-1 {
+
+  position: relative;
+
+  h2 {
+    font-weight: $font-weight-bold;
+    margin-bottom: 2rem;
+    font-size: 2.4rem;
+  }
+
+  .teaser-label {
+    display: none;
+  }
+
+  .views-row {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-grey;
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+  }
+
+  .more-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 2.4rem;
+    
+    a {
+      color: $text-color-dark;
+      font-size: $font-size-small;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      &:hover {
+        svg {
+          transform: translate3d(5px, 0, 0);
+        }
+      }
+    }
+    svg {
+      height: 1rem;
+      width: 1rem;
+      margin-left: 0.5rem;
+      fill: $color-orange;
+      transform: translate3d(0, 0, 0);
+      transition: transform 150ms;
+    }
+  }
+}

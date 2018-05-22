@@ -1,0 +1,197 @@
+.video-archive-overlay {
+  display: none;
+}
+.video--archive {
+
+  .view-header {
+    font-size: $font-size-small;
+  }
+
+  .view-filters {
+    margin: 0 auto 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-grey;
+    position: relative;
+    @include clearfix();
+
+    @include bp-wide {
+      width: 760px;
+    }
+
+    .view-header {
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: $text-color-dark;
+      text-transform: uppercase;
+    }
+
+    fieldset {
+      display: block;
+      width: 100%;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+
+      legend {
+        margin-bottom: 2rem;
+        color: $text-color-dark;
+      }
+    }
+
+    div.form-item {
+        float: left;
+        margin: 0 .75rem .5rem 0;
+
+      label {
+        border: 2px solid $color-orange;
+        padding: 0.5rem 1rem;
+        font-size: $font-size-small;
+        text-transform: uppercase;
+        color: $text-color-dark;
+        transition: all 250ms;
+        margin-bottom: 0;
+        cursor: pointer;
+
+        &:hover {
+          background: $color-blue-darkest;
+          border-color: $color-blue-darkest;
+          color: white;
+        }     
+      }
+      input:checked ~ label {
+        background: $color-blue-darkest;
+        border-color: $color-blue-darkest;
+        color: white;
+      }
+      input {
+        display: none;
+      }
+    }
+  }
+  .video__item {
+    width: 100%;
+    margin-bottom: 5rem;
+    position: relative;
+    @include clearfix();
+
+    @include bp-normal {
+      width: 365px;
+    }
+
+    @include bp-wide {
+      width: 360px;
+    }
+
+    a {
+      display: block;
+      cursor: pointer;
+    }
+
+    img {
+      position: relative;
+      float: left;
+      width: 100%;
+      opacity: 0.15;
+    } 
+  }
+
+  .media-video {
+    position: relative;
+  }
+
+  .bundle {
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
+
+    .icon-play {
+      width: 2.25rem;
+      height: 2.25rem;
+      fill: white;
+      float: left;
+      margin-right: 0.75rem;
+      margin-top: -0.35rem;
+    }
+  }
+
+  h2 {
+    color: white;
+    margin: 1rem 0;
+    text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
+    font-size: 3rem;
+
+    @include bp-narrow {
+      font-size: 3.8rem;
+    }
+  }
+  .icon-arrow-right {
+    margin-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+    fill: white;
+  }
+
+  .field--name-field-video-duration {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: $color-blue-darkest;
+    padding: .5rem 1rem;
+    font-size: 1.4rem;
+    color: white;
+  }
+
+  .grid-item__content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    color: white;
+    z-index: 11;
+    padding: 3rem;
+  }
+
+  .grid-item__description {
+    margin-top: 2rem;
+  }
+
+  .field--name-field-tags {
+    margin-top: 2rem;
+    @include clearfix();
+    
+    .field__item {
+      float: left;
+      border: 2px solid $color-orange;
+      padding: 0.5rem 1rem;
+      font-size: $font-size-small;
+      text-transform: uppercase;
+      margin-right: .75rem;
+      color: $text-color-dark;
+      transition: all 250ms;
+      cursor: pointer;
+
+      &:hover {
+        background: $color-blue-darkest;
+        border-color: $color-blue-darkest;
+        color: white;
+      }
+    }
+  }
+
+  .grid-item__background {
+    z-index: 1;
+    backface-visibility: hidden;
+    position: relative;
+    box-shadow: 0;
+    background: $color-orange;
+    @include clearfix();
+
+    @include bp-normal {
+      transform: scale(1); 
+      transition: all 200ms;
+      transition-delay: 0
+    }
+  }
+}
