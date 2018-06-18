@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.grid_large
+label: 'Grid large'
+targetEntityType: node
+cache: true

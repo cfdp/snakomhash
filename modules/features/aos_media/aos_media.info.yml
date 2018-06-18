@@ -1,0 +1,36 @@
+name: 'AOS Media'
+type: module
+core: 8.x
+dependencies:
+  - allowed_formats
+  - better_exposed_filters
+  - block
+  - crop
+  - embed
+  - entity_browser
+  - entity_browser_entity_form
+  - entity_embed
+  - entity_reference_revisions
+  - field
+  - field_group
+  - file
+  - image
+  - image_widget_crop
+  - inline_entity_form
+  - language
+  - link
+  - magnific_popup
+  - masonry_views
+  - media_entity
+  - media_entity_image
+  - node
+  - options
+  - paragraphs
+  - path
+  - rdf
+  - taxonomy
+  - text
+  - user
+  - video_embed_field
+  - views
+  - viewsreference

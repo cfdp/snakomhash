@@ -1,0 +1,29 @@
+langcode: da
+status: true
+dependencies:
+  module:
+    - media_entity
+    - options
+id: media.field_bg_color
+field_name: field_bg_color
+entity_type: media
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: blue
+      label: Blue
+    -
+      value: cyan
+      label: Cyan
+    -
+      value: orange
+      label: Orange
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

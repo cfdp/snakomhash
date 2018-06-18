@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.grid_large
+    - field.field.media.image_grid.field_media_image
+    - image.style.grid_684x
+    - media_entity.bundle.image_grid
+  module:
+    - image
+id: media.image_grid.grid_large
+targetEntityType: media
+bundle: image_grid
+mode: grid_large
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: grid_684x
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

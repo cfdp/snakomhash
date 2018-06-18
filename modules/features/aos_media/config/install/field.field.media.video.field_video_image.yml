@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_video_image
+    - media_entity.bundle.image_grid
+    - media_entity.bundle.video
+id: media.video.field_video_image
+field_name: field_video_image
+entity_type: media
+bundle: video
+label: 'Video image'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image_grid: image_grid
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image_grid
+field_type: entity_reference

@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.grid_small
+label: 'Grid small'
+targetEntityType: node
+cache: true

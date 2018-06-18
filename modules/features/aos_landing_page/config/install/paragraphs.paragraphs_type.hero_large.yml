@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: hero_large
+label: 'Hero large'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

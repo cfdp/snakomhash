@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_browser_entity_form
+name: images
+label: Images
+display: iframe
+display_configuration:
+  width: '1140'
+  height: '650'
+  link_text: ''
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  9e5aeebc-8d59-468e-b16b-8cc2df821df6:
+    settings:
+      entity_type: media
+      bundle: image_embed
+      form_mode: default
+      submit_text: Save
+    uuid: 9e5aeebc-8d59-468e-b16b-8cc2df821df6
+    weight: 1
+    label: New
+    id: entity_form

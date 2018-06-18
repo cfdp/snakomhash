@@ -1,0 +1,32 @@
+excluded:
+  - language.content_settings.paragraph.hero
+  - views.view.hero
+  - field.field.paragraph.hero.field_hero_image
+  - field.field.node.article.field_hero
+  - field.field.node.lexicon_article.field_hero
+  - field.field.node.page.field_hero
+  - paragraphs.paragraphs_type.hero
+  - core.entity_view_mode.paragraph.g
+  - core.entity_view_mode.paragraph.gir
+  - core.entity_view_mode.paragraph.teaser
+  - core.entity_view_mode.node.grid_large
+  - core.entity_view_mode.node.grid_small
+  - core.entity_view_display.paragraph.hero.default
+  - core.entity_view_display.paragraph.hero.g
+  - core.entity_view_display.paragraph.hero.gir
+  - core.entity_view_display.paragraph.hero.teaser
+  - core.entity_view_display.node.article.default
+  - core.entity_view_display.node.article.grid_large
+  - core.entity_view_display.node.article.grid_small
+  - core.entity_view_display.node.article.rss
+  - core.entity_view_display.node.article.teaser
+  - core.entity_view_display.node.lexicon_article.default
+  - core.entity_view_display.node.lexicon_article.grid_small
+  - core.entity_view_display.node.lexicon_article.teaser
+  - core.entity_view_display.node.page.default
+  - core.entity_view_display.node.page.teaser
+  - core.entity_form_display.node.article.default
+  - core.entity_form_display.node.lexicon_article.default
+  - core.entity_form_display.node.page.default
+  - core.entity_form_display.paragraph.hero.default
+required: true

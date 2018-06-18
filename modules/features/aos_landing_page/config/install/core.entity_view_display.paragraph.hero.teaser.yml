@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.teaser
+    - field.field.paragraph.hero.field_hero_image
+    - paragraphs.paragraphs_type.hero
+id: paragraph.hero.teaser
+targetEntityType: paragraph
+bundle: hero
+mode: teaser
+content:
+  field_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

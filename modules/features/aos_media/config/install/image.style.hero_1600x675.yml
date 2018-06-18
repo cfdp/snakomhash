@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.hero_small
+  module:
+    - crop
+name: hero_1600x675
+label: 'Hero 1600x675'
+effects:
+  72e37351-fe2b-4df6-b335-a1d2a0e0943e:
+    uuid: 72e37351-fe2b-4df6-b335-a1d2a0e0943e
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 1600
+      height: 675
+  48310315-eec4-4247-9d69-26f5579ef51c:
+    uuid: 48310315-eec4-4247-9d69-26f5579ef51c
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: hero_small

@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: hero_40x27
+label: 'Hero 40x27'
+effects:
+  6b6b602b-959a-4c0e-89c7-3713dadb51b0:
+    uuid: 6b6b602b-959a-4c0e-89c7-3713dadb51b0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 40
+      height: 27

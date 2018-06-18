@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hero
+  module:
+    - views
+  theme:
+    - altomstoffer
+id: views_block__hero_block_1
+theme: altomstoffer
+region: hero
+weight: 0
+provider: null
+plugin: 'views_block:hero-block_1'
+settings:
+  id: 'views_block:hero-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping:
+    parent_id: '@node.node_route_context:node'
+visibility: {  }

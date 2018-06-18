@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.hero_large
+  module:
+    - crop
+name: hero_1600x1080
+label: 'Hero 1600x1080'
+effects:
+  e5934a6a-c328-46bd-8385-adfd24b6fda4:
+    uuid: e5934a6a-c328-46bd-8385-adfd24b6fda4
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 1600
+      height: 1080
+  1efc4540-a056-477c-9886-854c0163dd84:
+    uuid: 1efc4540-a056-477c-9886-854c0163dd84
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: hero_large

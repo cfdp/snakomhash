@@ -1,0 +1,22 @@
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_bg_color
+    - media_entity.bundle.video
+  module:
+    - options
+id: media.video.field_bg_color
+field_name: field_bg_color
+entity_type: media
+bundle: video
+label: 'Background color'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: orange
+default_value_callback: ''
+settings: {  }
+field_type: list_string

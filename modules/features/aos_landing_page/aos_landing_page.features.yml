@@ -1,0 +1,7 @@
+excluded:
+  - image.style.hero_1600x1080
+  - image.style.hero_40x27
+  - block.block.views_block__hero_block_1
+  - crop.type.hero_large
+  - core.entity_view_display.media.image_hero.full
+required: true
