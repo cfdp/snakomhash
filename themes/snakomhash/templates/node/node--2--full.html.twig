@@ -34,13 +34,22 @@
 
     <div class="landing-grid landing-grid__front">
       {{ frontpage_articles_large }}
-      {{ frontpage_articles_small }}
-      {{ frontpage_videos }}
-      {{ frontpage_lexicon_articles }}
-    </div>
-  
-    <div class="frontpage-video-overlay">
-      {{ frontpage_videos_overlay }}
+      <div class="landing-grid__item bundle-guide">
+        <div class="grid-item__background">
+          <canvas width="1" height="1"></canvas>
+        </div>
+        <div class="grid-item__content">
+          {{ frontpage_guide_first }}
+        </div>
+      </div>
+      <div class="landing-grid__item bundle-guide">
+        <div class="grid-item__background color-beige">
+          <canvas width="1" height="1"></canvas>
+        </div>
+        <div class="grid-item__content">
+          {{ frontpage_guide_second }}
+        </div>
+      </div>
     </div>
     
   </div>

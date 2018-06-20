@@ -1,7 +1,7 @@
 .overlay-video {
 
   position: relative;
-  background: $color-blue-darkest;
+  background: $text-color;
   line-height: 0;
 
   > div {
@@ -22,14 +22,14 @@
   .overlay-label {
     text-transform: uppercase;
     margin-bottom: .5rem;
-    color: $text-color-dark;
+    color: $text-color;
     font-weight: $font-weight-light;
   }
 
   .field--name-name {
     font-weight: $font-weight-black;
     font-size: $font-size-large;
-    color: $text-color-dark;
+    color: $text-color;
     margin-bottom: 1rem;
   }
 
@@ -44,13 +44,13 @@
       font-size: $font-size-small;
       text-transform: uppercase;
       margin-right: .75rem;
-      color: $text-color-dark;
+      color: $text-color;
       transition: all 250ms;
       cursor: pointer;
 
       &:hover {
-        background: $color-blue-darkest;
-        border-color: $color-blue-darkest;
+        background: $text-color;
+        border-color: $text-color;
         color: white;
       }
     }

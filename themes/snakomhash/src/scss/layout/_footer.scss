@@ -1,14 +1,5 @@
 .footer-container {
-
-  .layout-footer-first {
-    padding: 5rem 0;
-    background: $color-blue;
-  }
-
-  .layout-footer-second {
-    padding: 2.5rem 0;
-    background: $color-blue-dark;
-  }
+  background: $color-beige;
 
   .region-footer-first,
   .region-footer-second {
@@ -19,6 +10,45 @@
     }
     @include bp-wide {
       max-width: 1140px;
+    }
+  }
+  .region-footer-first {
+    padding: 4.5rem 3rem;
+    @include clearfix();
+
+    @include bp-normal {
+      padding: 7rem 0;
+    }
+    
+    .block {
+      @include bp-normal {
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+
+        &:last-child {
+          padding-left: 10%;
+        }
+        &:first-child {
+          padding-right: 10%;
+        }
+      }
+    }
+  }
+  .region-footer-second {
+    padding: 3rem 3rem;
+    border-top: 2px solid $color-blue-dark;
+    @include clearfix();
+    
+    @include bp-normal {
+      padding: 3.5rem 0;
+    }   
+    
+    .block {
+      @include bp-normal {
+        float: left;
+        width: 50%;
+      }
     }
   }
 }

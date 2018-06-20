@@ -3,7 +3,8 @@
 /* Base */
 /* Colors */
 /* Text Colors */
-@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
+@import url("https://fonts.googleapis.com/css?family=Varela+Round");
 /* Font Sizes */
 /* Line Height */
 /* Font weights */
@@ -16,9 +17,9 @@ html {
 
 body {
   background-color: white;
-  font-family: "Rubik", sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1.6rem;
-  color: #54585d;
+  color: #1b3443;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   @media (min-width: 820px) {
@@ -44,19 +45,18 @@ hr {
   margin: 1em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Rubik", sans-serif;
+  font-family: "Varela Round", sans-serif;
   line-height: 1.15em;
   font-weight: 900;
   margin-bottom: 1rem;
-  color: #19242c; }
+  color: #1b3443; }
   h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
     margin-top: 0; }
 
 h1 {
   font-size: 3.6rem;
-  font-family: "Rubik", sans-serif;
-  line-height: 1.15em;
-  text-transform: uppercase; }
+  font-family: "Playfair Display", serif;
+  line-height: 1.15em; }
   @media (min-width: 820px) {
     h1 {
       font-size: 4.5rem; } }
@@ -101,7 +101,7 @@ blockquote {
   margin: 0 0 2rem 0;
   font-size: 1.6rem;
   line-height: 1.75em;
-  color: #54585d; }
+  color: #1b3443; }
 
 .text p:last-child,
 .cke_editable p:last-child {
@@ -109,7 +109,7 @@ blockquote {
 
 .text a,
 .cke_editable a {
-  color: #ff8b1e;
+  color: #d45241;
   text-decoration: none; }
 
 .text a:hover,
@@ -118,7 +118,7 @@ blockquote {
 
 .text strong,
 .cke_editable strong {
-  color: #19242c; }
+  color: #1b3443; }
 
 .text ul, .text ol,
 .cke_editable ul,
@@ -127,7 +127,7 @@ blockquote {
   padding: 0 0 0 3rem;
   font-size: 1.6rem;
   line-height: 1.75em;
-  color: #54585d; }
+  color: #1b3443; }
   .text ul li, .text ol li,
   .cke_editable ul li,
   .cke_editable ol li {
@@ -156,7 +156,7 @@ blockquote {
 
 textarea {
   border: 1px solid #ccc;
-  font-family: "Rubik", sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1.6rem;
   padding: 0.75em;
   box-sizing: border-box;
@@ -170,7 +170,7 @@ input[type=password],
 input[type=email],
 input[type=search] {
   border: 1px solid #ccc;
-  font-family: "Rubik", sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 1.6rem;
   padding: 0.75em;
   box-sizing: border-box;
@@ -185,7 +185,7 @@ input[type=search] {
 
 input[type=submit],
 input[type=button] {
-  background: #005c8d;
+  background: #1b3443;
   color: white;
   padding: 0.75em 2em;
   box-sizing: border-box;
@@ -194,11 +194,11 @@ input[type=button] {
   appearance: none; }
 
 ::-moz-selection {
-  background-color: #ff8b1e;
+  background-color: #efc94c;
   color: white; }
 
 ::selection {
-  background-color: #ff8b1e;
+  background-color: #efc94c;
   color: white; }
 
 /* Aligning */

@@ -55,9 +55,6 @@
         {% if content.field_hero_link|render|striptags|trim %}
         <a href="{{ content.field_hero_link[0]['#url'] }}" class="button">
         {{ content.field_hero_link[0]['#title'] }}
-        <svg class='icon icon-arrow-right'>
-          <use xlink:href='/{{ base_path ~ directory }}/assets/svg/symbols.min.svg#arrow-right' />
-        </svg>
         </a>
         {% endif %}
       </div>

@@ -12,13 +12,14 @@
       text-transform: uppercase;
       font-weight: $font-weight-light;
       margin-bottom: 3rem;
+      text-align: center;
     }
 
     > .field--name-field-intro {
-      font-weight: $font-weight-bold;
-      font-size: 2.2rem;
+      font-size: $font-size-large;
       margin-bottom: 3rem;
-      color: $text-color-dark;
+      color: $text-color;
+      font-family: $font-fam-head;
     }
 
     > .field--name-field-view {
@@ -37,7 +38,11 @@
   }
 }
 
-.node--type-article.node--view-mode-teaser {
+.node--type-article.node--view-mode-teaser,
+.node--type-page.node--view-mode-teaser {
+
+  border: 1px solid $color-grey;
+  padding: 2.5rem; 
 
   @include clearfix();
 
@@ -46,7 +51,7 @@
     margin-bottom: 1rem;
     text-transform: uppercase;
     font-size: $font-size-small;
-    color: $text-color-dark;
+    color: $text-color;
   }
 
   a {
@@ -67,21 +72,23 @@
       display: block;
     }
   }
-  .field--name-field-article-author {
-    font-size: 1.3rem;
-    line-height: $line-height-small;
-    font-weight: $font-weight-light;
-    color: $text-color-dark;
-    margin-bottom: .75rem;
-  }
   .title {
-    font-size: 1.8rem;
+    font-size: $font-size-large;
     font-weight: $font-weight-bold;
-    color: white;
-    background: $color-orange;
-    box-shadow: 4px 0 0 0 $color-orange, -4px 0 0 0 $color-orange;
+    color: $text-color;
+    font-family: $font-fam-head;
     display: inline;
     line-height: $line-height-small;
+  }
+}
+
+.article-response {
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid $text-color;
+
+  .article-response__text {
+    text-transform: uppercase;
   }
 }
 
@@ -118,7 +125,7 @@
     line-height: 2.4rem;
     
     a {
-      color: $text-color-dark;
+      color: $text-color;
       font-size: $font-size-small;
       text-transform: uppercase;
       text-decoration: none;

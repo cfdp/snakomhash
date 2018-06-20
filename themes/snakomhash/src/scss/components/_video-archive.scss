@@ -22,7 +22,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      color: $text-color-dark;
+      color: $text-color;
       text-transform: uppercase;
     }
 
@@ -35,7 +35,7 @@
 
       legend {
         margin-bottom: 2rem;
-        color: $text-color-dark;
+        color: $text-color;
       }
     }
 
@@ -48,20 +48,20 @@
         padding: 0.5rem 1rem;
         font-size: $font-size-small;
         text-transform: uppercase;
-        color: $text-color-dark;
+        color: $text-color;
         transition: all 250ms;
         margin-bottom: 0;
         cursor: pointer;
 
         &:hover {
-          background: $color-blue-darkest;
-          border-color: $color-blue-darkest;
+          background: $text-color;
+          border-color: $text-color;
           color: white;
         }     
       }
       input:checked ~ label {
-        background: $color-blue-darkest;
-        border-color: $color-blue-darkest;
+        background: $text-color;
+        border-color: $text-color;
         color: white;
       }
       input {
@@ -136,7 +136,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    background: $color-blue-darkest;
+    background: $text-color;
     padding: .5rem 1rem;
     font-size: 1.4rem;
     color: white;
@@ -168,13 +168,13 @@
       font-size: $font-size-small;
       text-transform: uppercase;
       margin-right: .75rem;
-      color: $text-color-dark;
+      color: $text-color;
       transition: all 250ms;
       cursor: pointer;
 
       &:hover {
-        background: $color-blue-darkest;
-        border-color: $color-blue-darkest;
+        background: $text-color;
+        border-color: $text-color;
         color: white;
       }
     }
@@ -201,7 +201,7 @@
       background: $color-green;
     }
     &.color-blue {
-      background: $color-blue;
+      background: $color-blue-dark;
     }
   }
 }

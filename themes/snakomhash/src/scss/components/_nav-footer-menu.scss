@@ -1,11 +1,13 @@
-.navigation.menu--footer {
-
-  color: white;
+.navigation.menu--footer-menu {
 
   ul.menu {
     text-align: center;
     margin: 0;
     padding: 0;
+
+    @include bp-normal {
+      text-align: right;
+    }
 
     li {
       display: inline-block;
@@ -19,9 +21,8 @@
       margin: 0;
     }
     a {
-      color: white;
+      color: $text-color;
       text-decoration: none;
-      font-weight: $font-weight-bold;
       line-height: $line-height-large;
     }
     a:hover {

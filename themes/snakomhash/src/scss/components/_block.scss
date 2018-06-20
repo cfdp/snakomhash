@@ -1,12 +1,40 @@
 // This file is for general block styling only.
 
-.region-footer-second {
-
-  color: white;
+.region-footer-first {
 
   .block {
-    text-align: center;
+    
+    &:first-child {
+      margin-bottom: 3rem;
+      
+      @include bp-normal {
+        margin-bottom: 0;
+      }
+    }
+
+    h2 {
+      font-family: $font-fam-head;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+
+      @include bp-normal {
+        font-size: 3.5rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+.region-footer-second {
+  color: $text-color;
+
+  .block {
     font-size: $font-size-small;
+    text-align: center;
+
+    @include bp-normal {
+      text-align: left;
+    }
 
     p {
       font-size: $font-size-small;

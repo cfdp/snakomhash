@@ -1,34 +1,21 @@
-@mixin button($bg-color: $color-orange, $color: white) {
+@mixin button($color: white, $bg-color: transparent) {
   background: $bg-color;
   color: $color;
-  border-bottom: 2px solid darken($bg-color, 10%);
-  padding: 1.5rem 2.5rem;
+  border: 2px solid $color;
+  border-radius: 3rem;
+  padding: 1.5rem 3rem;
   display: inline-block;
-  font-weight: $font-weight-medium;
-  position: relative;
-  top: 0;
   line-height: 1;
+  text-decoration: none;
+  font-weight: $font-weight-bold;
+  font-family: $font-fam-head;
 
   &:hover {
-    text-decoration: none;
     
-    svg {
-      transform: translate3d(5px, 0, 0);
-    }
   }
 
   &:active {
-    top: 2px;
-    border-bottom-color: transparent;
-  }
 
-  svg {
-    fill: white;
-    width: 1.2rem;
-    height: 1.2rem;
-    margin: 0 0 0 1.5rem;
-    transform: translate3d(0, 0, 0);
-    transition: transform 150ms;
   }
 
 }

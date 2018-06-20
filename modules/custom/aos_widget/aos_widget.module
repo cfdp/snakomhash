@@ -15,13 +15,13 @@ use Drupal\Core\Link;
 function aos_widget_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
   // Media Entity Form (images).
-  if(strpos($form_id, 'media_image_') === 0) {
+  if (strpos($form_id, 'media_image_') === 0) {
     // Remove revisioning information.
     $form['revision_information']['#access'] = FALSE;
   }
 
   // Entity Browser.
-  if($form_id == 'entity_browser_widget_entity_browser_form') {
+  if ($form_id == 'entity_browser_widget_entity_browser_form') {
     $form['widget_selector']['widget']['#title'] = t('Widgets');
     $form['widget_selector']['widget']['#description'] = t('Create a new widget or choose an existing.');
     $form['widget_selector']['widget']['#suffix'] = '<br /><hr /><br />';
@@ -44,9 +44,9 @@ function aos_widget_form_alter(&$form, FormStateInterface $form_state, $form_id)
     ];
 
     // When entity exists.
-    if(isset($entity) && $entity->bundle() != 'image_embed') {
+    if (isset($entity) && $entity->bundle() != 'image_embed') {
 
-      if($entity->bundle() == 'basic') {
+      if ($entity->bundle() == 'basic') {
         // Enable aligning.
         $form['attributes']['data-align']['#default_value'] = isset($entity_element['data-align']) ? $entity_element['data-align'] : 'left';
         unset($form['attributes']['data-align']['#options']['center']);
@@ -57,7 +57,7 @@ function aos_widget_form_alter(&$form, FormStateInterface $form_state, $form_id)
         $form['attributes']['data-align']['#access'] = FALSE;
       }
     }
-    else if(isset($entity) && $entity->bundle() == 'image_embed'){
+    else if (isset($entity) && $entity->bundle() == 'image_embed'){
       // Clean up aligning options.
       $form['attributes']['data-align']['#default_value'] = isset($entity_element['data-align']) ? $entity_element['data-align'] : 'left';
       unset($form['attributes']['data-align']['#options']['']);
@@ -76,7 +76,7 @@ function aos_widget_entity_embed_dialog_validate(array &$form, FormStateInterfac
 
   $entity_element = $form_state->get('entity_element');
 
-  if($entity_element['data-entity-embed-display'] == 'view_mode:media.full') {
+  if ($entity_element['data-entity-embed-display'] == 'view_mode:media.full') {
     $form_state->setValueForElement($form['attributes']['data-align'], '');
   }
 }
@@ -100,8 +100,8 @@ function aos_widget_preprocess_entity_embed_container(&$variables) {
   $attributes = $variables['attributes'];
   $entity_bundle = $variables['element']['#entity']->bundle();
 
-  if($entity_type == 'media' && $entity_bundle == 'image_embed') {
-    if(isset($attributes['data-align'])) {
+  if ($entity_type == 'media' && $entity_bundle == 'image_embed') {
+    if (isset($attributes['data-align'])) {
       $variables['align_class'] = 'float-' . $attributes['data-align'];
     }
     else {
@@ -109,7 +109,7 @@ function aos_widget_preprocess_entity_embed_container(&$variables) {
     }
   }
 
-  if($entity_type == 'block_content') {
+  if ($entity_type == 'block_content') {
 
     // Create an instance of the block we are rendering.
     $block_manager = \Drupal::service('plugin.manager.block');
@@ -135,12 +135,12 @@ function aos_widget_preprocess_entity_embed_container(&$variables) {
 
     $variables['children'] = $html;
 
-    if($entity_bundle == 'text_button') {
+    if ($entity_bundle == 'text_button') {
       $variables['align_class'] = '';
-      if(in_array('align-left', $classes)) {
+      if (in_array('align-left', $classes)) {
         $variables['align_class'] = 'text__side text__side--left';
       }
-      if(in_array('align-right', $classes)) {
+      if (in_array('align-right', $classes)) {
         $variables['align_class'] = 'text__side text__side--right';
       }
     }
@@ -175,11 +175,11 @@ function aos_widget_theme_suggestions_entity_embed_container_alter(array &$sugge
   $active_theme = \Drupal::service('theme.manager')->getActiveTheme()->getName();
 
   // Only provide templates for frontend theme.
-  if($active_theme == 'altomstoffer') {
-    if($entity_bundle == 'image_embed') {
+  if ($active_theme == 'snakomhash') {
+    if ($entity_bundle == 'image_embed') {
       $suggestions[] = 'entity_embed_container__image';
     }
-    if($entity_bundle == 'video') {
+    if ($entity_bundle == 'video') {
       $suggestions[] = 'entity_embed_container__video';
     }
   }
@@ -201,7 +201,7 @@ function aos_widget_theme_suggestions_block_alter(array &$suggestions, array $va
   $active_theme = \Drupal::service('theme.manager')->getActiveTheme()->getName();
 
   // Don't provide template for frontend theme.
-  if ($bundle && $active_theme != 'altomstoffer') {
+  if ($bundle && $active_theme != 'snakomhash') {
     $suggestions[] = 'block__widget';
   }
 }

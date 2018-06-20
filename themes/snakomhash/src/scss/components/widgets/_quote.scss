@@ -1,6 +1,8 @@
 .quote {
   text-align: center;
   display: block;
+  background: $color-beige;
+  padding: 3rem;
 
   .icon {
     width: 2rem;
@@ -9,24 +11,16 @@
   }
 
   .quote__text {
-    font-size: $font-size-larger;
+    font-size: 2.2rem;
     line-height: $line-height-medium;
-    font-weight: $font-weight-medium;
-    font-style: italic;
-    color: $text-color-dark;
+    font-weight: $font-weight-bold;
+    font-family: $font-fam-head;
+    color: $text-color;
     margin-bottom: 1.5rem;
     margin-top: .25rem;
   }
   .quote__source {
     font-size: $font-size-small;
     font-weight: $font-weight-light;
-  }
-}
-
-.embedded-entity.bundle-quote {
-
-  @include bp-normal {
-    margin-left: -95px;
-    margin-right: -95px;
   }
 }

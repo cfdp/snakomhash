@@ -82,41 +82,9 @@
 %}
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
-
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
-      </div>
-    </footer>
-  {% endif %}
-
-  <div class="node__intro text">
-    {{ content|without('field_sections') }}
-  </div>
-
-  <div{{ content_attributes.addClass('node__content', 'text') }}>
-    {{ toc }}
-    <a href="#" class="toc-toggle">
-      <svg class='icon icon-list-ul'>
-        <use xlink:href='/{{ base_path ~ directory }}/assets/svg/symbols.min.svg#list-ul' />";
-      </svg>
-      <svg class='icon icon-close'>
-        <use xlink:href='/{{ base_path ~ directory }}/assets/svg/symbols.min.svg#close' />";
-      </svg>
-      {{ 'Table of contents'|t }}
-      </a>
-    {{ content.field_sections }}
-  </div>
-
+  <div class="teaser-label">{{ 'Also read'|t }}</div>
+  <a href="{{ url }}" rel="bookmark">
+    {{ content.field_hero }}
+    <div class="title">{{ node.getTitle }}</div>
+  </a>
 </article>

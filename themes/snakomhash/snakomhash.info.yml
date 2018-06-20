@@ -5,6 +5,9 @@ description: 'Responsive mobile first theme based on classy.'
 package: Custom
 core: 8.x
 screenshot: screenshot.png
+logo:
+  path: 'themes/snakomhash/logo.png'
+  use_default: false
 libraries:
   - snakomhash/global-styling
 ckeditor_stylesheets:

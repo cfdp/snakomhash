@@ -39,6 +39,11 @@
 .page-node-type-article,
 .page-node-type-page {
 
+  .page-title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
   .layout-content {
     @include bp-normal {
       padding: 0;

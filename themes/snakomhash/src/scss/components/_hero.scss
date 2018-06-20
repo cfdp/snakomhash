@@ -95,31 +95,31 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    text-align: center;
     padding: 0 1rem;
     box-sizing: border-box;
 
     @include bp-normal {
       margin: auto;
       width: 960px;
+      padding-right: 320px;
       top: 40%;
       transform: translateY(-40%);
     }
     @include bp-wide {
       width: 1140px;
+      padding-right: 456px;
     }
   }
 
   .field--name-field-hero-title {
+    font-family: $font-fam-head;
     font-weight: $font-weight-black;
     color: white;
     font-size: 4rem;
-    line-height: $line-height-small;
-    text-transform: uppercase;
+    line-height: 1em;
     padding: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
-    @include hyphenate();
 
     @include bp-narrow {
       font-size: 4.5rem;
@@ -128,52 +128,23 @@
       font-size: 6rem;
     }
     @include bp-wide {
-      font-size: 11.5rem;
+      font-size: 8rem;
     }
   }
   .field--name-field-hero-body p {
     color: white;
     font-size: $font-size-base;
-    line-height: 1.25em;
-    text-transform: uppercase;
+    line-height: $line-height-base;
     text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
 
     @include bp-normal {
-      font-size: 2rem;
-    }
-    @include bp-wide {
-      font-size: 3rem;
+      font-size: $font-size-large;
     }
   }
 
   .button {
     margin-top: 2rem;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    background: $color-orange;
-    border-bottom: 2px solid $color-orange-dark;
-    padding: 1.5rem 2.5rem;
-    font-weight: $font-weight-bold;
-    position: relative;
-    top: 0;
-
-    @include bp-normal {
-      margin-top: 3rem;
-    }
-    @include bp-wide {
-      margin-top: 5rem;
-    }
-
-    &:hover {
-      svg {
-        transform: translate3d(5px, 0, 0);
-      }
-    }
-    &:active {
-      top: 2px;
-      border-bottom-color: transparent;
-    }
+    @include button(white);
   }
   
   svg {

@@ -4,7 +4,19 @@
   overflow: hidden;
 
   @include bp-normal {
-    background: $color-blue-darkest; 
+    background: $text-color; 
+  }
+
+  .icon-logo {
+    width: 20rem;
+    height: 3rem;
+    fill: $text-color;
+
+    @include bp-normal {
+      width: 27.5rem;
+      height: 4.2rem;
+      fill: white;
+    }
   }
 
   .region-header {

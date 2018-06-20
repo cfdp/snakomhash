@@ -18,16 +18,13 @@
     'region-' ~ region|clean_class,
   ]
 %}
-{% if content %}
   <div{{ attributes.addClass(classes) }}>
-    {{ content }}
-    <div class="block menu-toggle">
-    <a href="#" class="sidebar-open">
-      Menu
-      <svg class='icon icon-th-menu'>
-        <use xlink:href='/{{ base_path ~ directory }}/assets/svg/symbols.min.svg#th-menu' />
-      </svg>
-    </a>
+    <div class="site-branding block">
+      <a href="#">
+        <svg class='icon icon-logo'>
+          <use xlink:href='/{{ base_path ~ directory }}/assets/svg/symbols.min.svg#logo' />
+        </svg>
+      </a>
     </div>
+    {{ content }}
   </div>
-{% endif %}

@@ -6,7 +6,7 @@
   ul {
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid $text-color-dark;
+    border-bottom: 1px solid $text-color;
 
     li {
 	    display: block;
@@ -18,17 +18,17 @@
       }
 
       a {
-        color: $text-color-dark;
+        color: $text-color;
         display: block;
         padding: 0.5em 1em;
-        border: 1px solid $text-color-dark;
+        border: 1px solid $text-color;
         border-bottom: none;
         line-height: 1;
         text-decoration: none;
         transition: all .5s;
       }
       a.is-active {
-        background: $text-color-dark;
+        background: $text-color;
         color: white;
       }
     }

@@ -1,0 +1,70 @@
+/* Landing page */
+.landing-grid .landing-grid__item.bundle-guide {
+
+  .grid-item__content {
+    height: 100%;
+    color: $text-color;
+
+    .label {
+      border-bottom: none;
+      text-align: center;
+      display: block;
+      font-weight: $font-weight-normal;
+      text-transform: uppercase;
+      margin-bottom: 4rem;
+    }
+    .intro {
+      font-family: $font-fam-head;
+      font-weight: $font-weight-bold;
+      font-size: 2rem;
+      line-height: $line-height-small;
+      margin-bottom: 3rem;
+      text-align: center;
+
+      @include bp-normal {
+        font-size: $font-size-base;
+        margin-bottom: 2rem;
+      }
+      @include bp-wide {
+        font-size: 3.2rem;
+        margin-bottom: 3rem;
+      }
+    } 
+
+    .view-frontpage-statements {
+      top: 50%;
+      transform: translateY(-50%);
+      position: relative;
+    }
+  }
+
+  .statement-item {
+    margin-bottom: 1rem;
+
+    @include bp-normal {
+      font-size: $font-size-small;
+    }
+    @include bp-wide {
+      font-size: $font-size-base;
+    }
+
+    a {
+      color: $text-color;
+      padding: 1.5rem 3rem;
+      border-radius: 6rem;
+      display: block;
+      transition: opacity 250ms ease-in-out;
+      border: 1px solid $text-color;
+      text-align: center;
+      &:hover {
+        text-decoration: none;
+        opacity: 0.75;
+      }
+    }
+    &:first-child {
+      a {
+        
+      }
+    }
+  }
+}

@@ -53,16 +53,11 @@ function snakomhash_preprocess_paragraph__section(&$variables) {
  */
 function snakomhash_preprocess_node(&$variables) {
 
-  if ($variables['node']->getType() == 'lexicon_article') {
-    $variables['toc'] = views_embed_view('toc', 'toc_float');
-  }
-  elseif ($variables['node']->getType() == 'landing_page') {
-    if ($variables['node']->id() == 16) {
+  if ($variables['node']->getType() == 'landing_page') {
+    if ($variables['node']->id() == 2) {
       $variables['frontpage_articles_large'] = views_embed_view('frontpage_articles', 'block_grid_large');
-      $variables['frontpage_articles_small'] = views_embed_view('frontpage_articles', 'block_grid_small');
-      $variables['frontpage_videos'] = views_embed_view('frontpage_videos', 'block_grid_small');
-      $variables['frontpage_videos_overlay'] = views_embed_view('frontpage_videos', 'attachment_1');
-      $variables['frontpage_lexicon_articles'] = views_embed_view('frontpage_lexicon_articles', 'block_grid_small');
+      $variables['frontpage_guide_first'] = views_embed_view('frontpage_statements', 'block_front_first');
+      $variables['frontpage_guide_second'] = views_embed_view('frontpage_statements', 'block_front_second');
     }
     if ($variables['node']->id() == 21) {
       $variables['landingpage_articles_large'] = views_embed_view('landingpage_articles', 'block_grid_large');
@@ -95,11 +90,9 @@ function snakomhash_preprocess_field(&$variables) {
  */
 function snakomhash_theme_suggestions_container_alter(array &$suggestions, array $variables) {
   $no_wrapper_views = [
-    'toc',
     'hero',
     'frontpage_articles',
-    'frontpage_lexicon_articles',
-    'frontpage_videos',
+    'frontpage_statements',
     'landingpage_articles',
   ];
   if (isset($variables['element']['#name']) && in_array($variables['element']['#name'], $no_wrapper_views)) {

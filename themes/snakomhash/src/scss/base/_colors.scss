@@ -1,17 +1,18 @@
 /* Colors */
-$color-blue: #005c8d;
-$color-blue-dark: #00507a;
-$color-blue-darkest: #1a262e;
+$color-blue-dark: #1b3443;
 
 $color-orange: #ff8b1e;
 $color-orange-dark: #a45912;
 
 $color-green: #00d79a;
 
+$color-yellow: #efc94c;
+$color-red: #d45241;
+$color-beige: #f5f0e9;
+
 $color-grey-light: #f1f1f1;
 $color-grey: #dbdbdb;
 
 /* Text Colors */
-$text-color: #54585d;
-$text-color-dark: #19242c;
-$link-color: $color-orange;
+$text-color: $color-blue-dark;
+$link-color: $color-red;
