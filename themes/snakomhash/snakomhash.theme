@@ -28,27 +28,6 @@ function snakomhash_preprocess_entity_embed_container(&$variables) {
 }
 
 /**
- * Implements hook_preprocess_paragraph_HOOK().
- */
-function snakomhash_preprocess_paragraph__section(&$variables) {
-
-  $paragraph = $variables['paragraph'];
-  $id = $paragraph->id();
-  $parent_node = $paragraph->getParentEntity();
-  $refs = $parent_node->get('field_sections')->getValue();
-
-  // Find delta value from parent entity, as it it not available
-  // on the paragram item.
-  foreach ($refs as $key => $ref) {
-    if ($ref['target_id'] == $id) {
-      $index = intval($key) + 1;
-    }
-  }
-  $variables['section_number_display'] = sprintf("%02d", $index);
-  $variables['section_number_id'] = $index;
-}
-
-/**
  * Implements hook_preprocess_node().
  */
 function snakomhash_preprocess_node(&$variables) {
@@ -58,6 +37,7 @@ function snakomhash_preprocess_node(&$variables) {
       $variables['frontpage_articles_large'] = views_embed_view('frontpage_articles', 'block_grid_large');
       $variables['frontpage_guide_first'] = views_embed_view('frontpage_statements', 'block_front_first');
       $variables['frontpage_guide_second'] = views_embed_view('frontpage_statements', 'block_front_second');
+      $variables['frontpage_test_teaser'] = views_embed_view('frontpage_statements', 'block_front_second');
     }
     if ($variables['node']->id() == 21) {
       $variables['landingpage_articles_large'] = views_embed_view('landingpage_articles', 'block_grid_large');

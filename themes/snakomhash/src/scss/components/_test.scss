@@ -1,0 +1,106 @@
+.node--type-test {
+
+  .steps {
+    text-align: center;
+
+    .step__item {
+      // display: none;
+    }
+
+    .label {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: $font-weight-normal;
+      display: block;
+      margin-bottom: 1rem;
+    }
+
+    .step__intro {
+      font-family: $font-fam-head;
+      margin-bottom: 5rem;
+      padding-bottom: 5rem;
+      border-bottom: 1px solid $text-color;
+
+      p {
+        font-size: $font-size-large;
+        line-height: $line-height-base;
+      }
+    }
+
+    .step__question {      
+      margin-bottom: 4rem;
+
+      .field {
+        font-family: $font-fam-head;
+        font-weight: $font-weight-bold;
+        font-size: 1.8rem;
+      }
+    }
+
+    .step__answers {
+
+      .step__answer {
+        font-size: 1.8rem;
+        font-weight: $font-weight-black;
+        font-family: $font-fam-head;
+        margin-bottom: 1rem;
+
+        a {
+          display: block;
+          padding: 1.5rem;
+          color: $text-color;
+          border: 2px solid $color-blue-dark;
+          text-decoration: none;
+          transition: color 250ms, background 250ms;
+        }
+        a:hover {
+          background: $color-blue-dark;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+/* BASE QUIZ STYLES */
+/* These styles ensure that the necessary elements are hidden for toggling */
+
+/* DO NOT EDIT UNLESS YOU KNOW WHAT YOU ARE DOING!! */
+
+.startQuiz,
+.nextQuestion,
+.backToQuestion,
+.questions li.question,
+.questions li.question .responses,
+.questions li.question .responses .correct,
+.questions li.question .responses .incorrect,
+.quizResults {
+    display: none;
+}
+
+/* If response messages are disabled or only shown on quiz completion,
+   nextQuestion button IS checkAnswer button - so it must be displayed */
+.nextQuestion.checkAnswer {
+    display: block;
+}
+
+ol.questions,
+ul.answers,
+ul.responses,
+ol.questions li,
+ul.answers li,
+ul.responses li {
+    list-style-type: none;
+}
+
+/* Accessibility */
+.quizName span:first-child {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}

@@ -1,0 +1,58 @@
+.test-teaser {
+  text-align: center;
+
+  .field--name-field-label {
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+
+    @include bp-normal {
+      margin-bottom: 3rem;
+    }
+    @include bp-wide {
+      margin-bottom: 4rem;
+    }
+  }
+  .field--name-field-title {
+    font-size: 2rem;
+    line-height: $line-height-small;
+    font-family: $font-fam-head;
+    font-weight: $font-weight-bold;
+    margin-bottom: 2rem;
+
+    @include bp-normal {
+
+    }
+    @include bp-wide {
+      font-size: 3.2rem;
+    }
+  }
+  .field--name-body {
+    margin-bottom: 3rem;
+
+    @include bp-normal {
+      margin-bottom: 2rem;
+    }
+    @include bp-wide {
+      margin-bottom: 3rem;
+    }
+
+    p {
+      color: white;
+      font-size: $font-size-small;
+      line-height: $line-height-base;  
+    }
+  }
+  .field--name-field-link {
+    a {
+      @include button(white);
+      padding-top: 1.25rem;
+
+      @include bp-normal {
+        font-size: $font-size-small;
+      }
+      @include bp-wide {
+        font-size: $font-size-base;
+      }
+    }
+  }
+}

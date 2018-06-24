@@ -110,7 +110,7 @@ blockquote {
 
 .text a,
 .cke_editable a {
-  color: #d45241;
+  color: #d55342;
   text-decoration: none; }
 
 .text a:hover,
@@ -279,18 +279,21 @@ input[type=button] {
     max-width: 1140px; } }
 
 .page-node-type-article .page-title,
-.page-node-type-page .page-title {
+.page-node-type-page .page-title,
+.page-node-type-test .page-title {
   text-align: center;
   margin-bottom: 4rem; }
 
 @media (min-width: 820px) {
   .page-node-type-article .layout-content,
-  .page-node-type-page .layout-content {
+  .page-node-type-page .layout-content,
+  .page-node-type-test .layout-content {
     padding: 0; } }
 
 @media (min-width: 820px) {
   .page-node-type-article .region-content,
-  .page-node-type-page .region-content {
+  .page-node-type-page .region-content,
+  .page-node-type-test .region-content {
     grid-column-start: 1;
     grid-column-end: -1;
     -ms-grid-column-span: 12;
@@ -302,11 +305,29 @@ input[type=button] {
 
 @media (min-width: 1200px) {
   .page-node-type-article .region-content,
-  .page-node-type-page .region-content {
+  .page-node-type-page .region-content,
+  .page-node-type-test .region-content {
     grid-column-start: 3;
     grid-column-end: 11;
     -ms-grid-column-span: 8;
     -ms-grid-column: 3; } }
+
+@media (min-width: 820px) {
+  .page-node-type-test .region-content {
+    grid-column-start: 1;
+    grid-column-end: 13;
+    -ms-grid-column-span: 12;
+    background: #f5f0e9;
+    margin-top: -17rem;
+    position: relative;
+    z-index: 2;
+    padding: 7.5rem 9.5rem;
+    margin-bottom: 9.5rem; } }
+
+@media (min-width: 1200px) {
+  .page-node-type-test .region-content {
+    -ms-grid-column-span: 12;
+    padding: 7.5rem 19rem; } }
 
 .page-node-type-lexicon-article .layout-content {
   max-width: none;
@@ -358,6 +379,7 @@ input[type=button] {
       margin: auto; } }
 
 .footer-container {
+  padding: 0 3rem;
   background: #f5f0e9; }
   .footer-container .region-footer-first,
   .footer-container .region-footer-second {
@@ -371,7 +393,7 @@ input[type=button] {
       .footer-container .region-footer-second {
         max-width: 1140px; } }
   .footer-container .region-footer-first {
-    padding: 4.5rem 3rem; }
+    padding: 4.5rem 0; }
     .footer-container .region-footer-first:after {
       content: "";
       display: table;
@@ -388,8 +410,13 @@ input[type=button] {
           padding-left: 10%; }
         .footer-container .region-footer-first .block:first-child {
           padding-right: 10%; } }
+    @media (min-width: 1200px) {
+      .footer-container .region-footer-first .block:last-child {
+        padding-left: 15%; }
+      .footer-container .region-footer-first .block:first-child {
+        padding-right: 15%; } }
   .footer-container .region-footer-second {
-    padding: 3rem 3rem;
+    padding: 3rem 0;
     border-top: 2px solid #1b3443; }
     .footer-container .region-footer-second:after {
       content: "";
@@ -619,6 +646,34 @@ body.page-node-type-landing-page .layout-content {
   margin: 0;
   padding: 0; }
 
+.region-header .navigation.menu--main ul.menu {
+  float: right;
+  margin-top: 1.2rem; }
+  .region-header .navigation.menu--main ul.menu li {
+    list-style: none;
+    float: left;
+    box-sizing: border-box;
+    margin: 0 0 0 3rem;
+    text-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.35);
+    font-size: 1.6rem; }
+  .region-header .navigation.menu--main ul.menu a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase; }
+
+.region-footer-first .navigation.menu--main li {
+  list-style: none;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  max-width: 17rem;
+  margin: 0 0 1rem; }
+
+.region-footer-first .navigation.menu--main a {
+  color: #1b3443;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 figure.figure-embed {
   margin: 3rem 0;
   padding: 0; }
@@ -846,7 +901,6 @@ figure.figure-embed {
     .paragraph--type--hero-large.paragraph--view-mode--default .hero__content-inner {
       margin: auto;
       width: 960px;
-      padding-right: 320px;
       top: 40%;
       transform: translateY(-40%); } }
   @media (min-width: 1200px) {
@@ -854,21 +908,35 @@ figure.figure-embed {
       width: 1140px;
       padding-right: 456px; } }
 
+.paragraph--type--hero-large.paragraph--view-mode--default .field--name-field-label {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  text-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.35); }
+  @media (min-width: 820px) {
+    .paragraph--type--hero-large.paragraph--view-mode--default .field--name-field-label {
+      font-size: 1.6rem; } }
+  @media (min-width: 1200px) {
+    .paragraph--type--hero-large.paragraph--view-mode--default .field--name-field-label {
+      font-size: 1.8rem; } }
+
 .paragraph--type--hero-large.paragraph--view-mode--default .field--name-field-hero-title {
   font-family: "Playfair Display", serif;
   font-weight: 900;
   color: white;
-  font-size: 4rem;
+  font-size: 3rem;
   line-height: 1em;
   padding: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   text-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.35); }
   @media (min-width: 600px) {
     .paragraph--type--hero-large.paragraph--view-mode--default .field--name-field-hero-title {
-      font-size: 4.5rem; } }
+      font-size: 4.5rem;
+      margin-bottom: 3rem; } }
   @media (min-width: 820px) {
     .paragraph--type--hero-large.paragraph--view-mode--default .field--name-field-hero-title {
-      font-size: 6rem; } }
+      font-size: 4.5rem; } }
   @media (min-width: 1200px) {
     .paragraph--type--hero-large.paragraph--view-mode--default .field--name-field-hero-title {
       font-size: 8rem; } }
@@ -876,9 +944,13 @@ figure.figure-embed {
 .paragraph--type--hero-large.paragraph--view-mode--default .field--name-field-hero-body p {
   color: white;
   font-size: 1.6rem;
-  line-height: 1.5em;
+  font-family: "Playfair Display", serif;
+  line-height: 1.3em;
   text-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.35); }
   @media (min-width: 820px) {
+    .paragraph--type--hero-large.paragraph--view-mode--default .field--name-field-hero-body p {
+      font-size: 2rem; } }
+  @media (min-width: 1200px) {
     .paragraph--type--hero-large.paragraph--view-mode--default .field--name-field-hero-body p {
       font-size: 2.2rem; } }
 
@@ -902,6 +974,13 @@ figure.figure-embed {
   margin: 0 0 0 1.5rem;
   transform: translate3d(0, 0, 0);
   transition: transform 150ms; }
+
+.page-node-type-test .paragraph--type--hero-large.paragraph--view-mode--default {
+  text-align: center; }
+  @media (min-width: 820px) {
+    .page-node-type-test .paragraph--type--hero-large.paragraph--view-mode--default .hero__content-inner {
+      padding: 0;
+      max-width: 760px; } }
 
 .video-archive-overlay {
   display: none; }
@@ -1408,7 +1487,7 @@ figure.figure-embed {
       padding-bottom: 1rem; }
     .landing-grid .landing-grid__item .grid-item__content h2 {
       color: white;
-      margin: 2.5rem 0 1rem;
+      margin: 2.5rem 0 1.5rem;
       text-shadow: 0 0 1.2rem rgba(0, 0, 0, 0.35);
       font-size: 2rem;
       font-family: "Playfair Display", serif;
@@ -1422,13 +1501,6 @@ figure.figure-embed {
       @media (min-width: 1200px) {
         .landing-grid .landing-grid__item .grid-item__content h2 {
           font-size: 3.5rem; } }
-    .landing-grid .landing-grid__item .grid-item__content .icon-arrow-right {
-      margin-top: 1rem;
-      width: 3rem;
-      height: 3rem;
-      fill: white;
-      transition: all 200ms;
-      transition-delay: 0; }
 
 .landing-grid .landing-grid__item:hover .grid-item__background {
   z-index: 10; }
@@ -1449,6 +1521,17 @@ figure.figure-embed {
     background: #efc94c; }
   .landing-grid .bundle-guide .grid-item__background.color-beige {
     background: #f5f0e9; }
+
+.landing-grid .bundle-test .grid-item__background {
+  background: #d55342; }
+
+.landing-grid .bundle-test .grid-item__content {
+  height: 100%; }
+
+.landing-grid .bundle-test .test-teaser {
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative; }
 
 .landing-grid .pager {
   text-align: center;
@@ -1600,7 +1683,7 @@ figure.figure-embed {
     font-size: 1.6rem;
     color: #1b3443; }
     .cc_banner .cc_message a {
-      color: #d45241;
+      color: #d55342;
       text-decoration: underline; }
   .cc_banner .button {
     margin-top: 1rem;
@@ -1669,15 +1752,89 @@ figure.figure-embed {
       font-size: 1.6rem; } }
   .landing-grid .landing-grid__item.bundle-guide .statement-item a {
     color: #1b3443;
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
     border-radius: 6rem;
     display: block;
     transition: opacity 250ms ease-in-out;
-    border: 1px solid #1b3443;
     text-align: center; }
     .landing-grid .landing-grid__item.bundle-guide .statement-item a:hover {
       text-decoration: none;
       opacity: 0.75; }
+
+.node--type-test .steps {
+  text-align: center; }
+  .node--type-test .steps .label {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 1rem; }
+  .node--type-test .steps .step__intro {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    border-bottom: 1px solid #1b3443; }
+    .node--type-test .steps .step__intro p {
+      font-size: 2.2rem;
+      line-height: 1.5em; }
+  .node--type-test .steps .step__question {
+    margin-bottom: 4rem; }
+    .node--type-test .steps .step__question .field {
+      font-family: "Playfair Display", serif;
+      font-weight: 700;
+      font-size: 1.8rem; }
+  .node--type-test .steps .step__answers .step__answer {
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1rem; }
+    .node--type-test .steps .step__answers .step__answer a {
+      display: block;
+      padding: 1.5rem;
+      color: #1b3443;
+      border: 2px solid #1b3443;
+      text-decoration: none;
+      transition: color 250ms, background 250ms; }
+    .node--type-test .steps .step__answers .step__answer a:hover {
+      background: #1b3443;
+      color: white; }
+
+/* BASE QUIZ STYLES */
+/* These styles ensure that the necessary elements are hidden for toggling */
+/* DO NOT EDIT UNLESS YOU KNOW WHAT YOU ARE DOING!! */
+.startQuiz,
+.nextQuestion,
+.backToQuestion,
+.questions li.question,
+.questions li.question .responses,
+.questions li.question .responses .correct,
+.questions li.question .responses .incorrect,
+.quizResults {
+  display: none; }
+
+/* If response messages are disabled or only shown on quiz completion,
+   nextQuestion button IS checkAnswer button - so it must be displayed */
+.nextQuestion.checkAnswer {
+  display: block; }
+
+ol.questions,
+ul.answers,
+ul.responses,
+ol.questions li,
+ul.answers li,
+ul.responses li {
+  list-style-type: none; }
+
+/* Accessibility */
+.quizName span:first-child {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
 
 .embedded-entity.bundle-basic h3 {
   color: white;
@@ -1730,3 +1887,54 @@ figure.figure-embed {
   .quote .quote__source {
     font-size: 1.3rem;
     font-weight: 400; }
+
+.test-teaser {
+  text-align: center; }
+  .test-teaser .field--name-field-label {
+    text-transform: uppercase;
+    margin-bottom: 4rem; }
+    @media (min-width: 820px) {
+      .test-teaser .field--name-field-label {
+        margin-bottom: 3rem; } }
+    @media (min-width: 1200px) {
+      .test-teaser .field--name-field-label {
+        margin-bottom: 4rem; } }
+  .test-teaser .field--name-field-title {
+    font-size: 2rem;
+    line-height: 1.15em;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    margin-bottom: 2rem; }
+    @media (min-width: 1200px) {
+      .test-teaser .field--name-field-title {
+        font-size: 3.2rem; } }
+  .test-teaser .field--name-body {
+    margin-bottom: 3rem; }
+    @media (min-width: 820px) {
+      .test-teaser .field--name-body {
+        margin-bottom: 2rem; } }
+    @media (min-width: 1200px) {
+      .test-teaser .field--name-body {
+        margin-bottom: 3rem; } }
+    .test-teaser .field--name-body p {
+      color: white;
+      font-size: 1.3rem;
+      line-height: 1.5em; }
+  .test-teaser .field--name-field-link a {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 3rem;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    padding-top: 1.25rem; }
+    @media (min-width: 820px) {
+      .test-teaser .field--name-field-link a {
+        font-size: 1.3rem; } }
+    @media (min-width: 1200px) {
+      .test-teaser .field--name-field-link a {
+        font-size: 1.6rem; } }

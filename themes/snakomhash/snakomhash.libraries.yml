@@ -9,8 +9,8 @@ global-styling:
     js/progressive-image.js: {}
     js/colorboxConfig.js: {}
     js/typedConfig.js: {}
-    js/libraries/scrollspy.js: {}
-    js/toc.js: {}
+    js/libraries/slickQuiz.js: {}
+    js/slickQuizConfig.js: {}
     js/videoFilterTags.js: {}
     js/sidebar.js: {}
     dependencies:

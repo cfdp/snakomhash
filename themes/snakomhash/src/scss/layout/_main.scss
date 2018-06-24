@@ -37,7 +37,8 @@
 }
 
 .page-node-type-article,
-.page-node-type-page {
+.page-node-type-page,
+.page-node-type-test {
 
   .page-title {
     text-align: center;
@@ -66,6 +67,26 @@
       grid-column-end: 11;
       -ms-grid-column-span: 8;
       -ms-grid-column: 3;
+    }
+  }
+}
+
+.page-node-type-test {
+  .region-content {
+    @include bp-normal {
+      grid-column-start: 1;
+      grid-column-end: 13;
+      -ms-grid-column-span: 12;
+      background: $color-beige;
+      margin-top: -17rem;
+      position: relative;
+      z-index: 2;
+      padding: 7.5rem 9.5rem;
+      margin-bottom: 9.5rem;
+    }
+    @include bp-wide {
+      -ms-grid-column-span: 12;
+      padding: 7.5rem 19rem;
     }
   }
 }

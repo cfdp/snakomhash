@@ -31,3 +31,48 @@
   // }
 
 }
+
+.region-header {
+ 
+  .navigation.menu--main {
+
+    ul.menu {
+      float: right;
+      margin-top: 1.2rem;
+
+      li {
+        list-style: none;
+        float: left;
+        box-sizing: border-box;
+        margin: 0 0 0 3rem;
+        text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
+        font-size: $font-size-base;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.region-footer-first {
+ 
+  .navigation.menu--main {
+
+    li {
+      list-style: none;
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+      max-width: 17rem;
+      margin: 0 0 1rem;
+    }
+    a {
+      color: $text-color;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}

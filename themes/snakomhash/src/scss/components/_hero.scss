@@ -101,7 +101,6 @@
     @include bp-normal {
       margin: auto;
       width: 960px;
-      padding-right: 320px;
       top: 40%;
       transform: translateY(-40%);
     }
@@ -111,21 +110,37 @@
     }
   }
 
+  .field--name-field-label {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
+ 
+    @include bp-normal {
+      font-size: 1.6rem;
+    }
+    @include bp-wide {
+      font-size: 1.8rem;
+    }
+  }
+
   .field--name-field-hero-title {
     font-family: $font-fam-head;
     font-weight: $font-weight-black;
     color: white;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1em;
     padding: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
     text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
 
     @include bp-narrow {
       font-size: 4.5rem;
+      margin-bottom: 3rem;
     }
     @include bp-normal {
-      font-size: 6rem;
+      font-size: 4.5rem;
     }
     @include bp-wide {
       font-size: 8rem;
@@ -134,10 +149,14 @@
   .field--name-field-hero-body p {
     color: white;
     font-size: $font-size-base;
-    line-height: $line-height-base;
+    font-family: $font-fam-head;
+    line-height: 1.3em;
     text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
 
     @include bp-normal {
+      font-size: 2rem;
+    }
+    @include bp-wide {
       font-size: $font-size-large;
     }
   }
@@ -154,5 +173,17 @@
     margin: 0 0 0 1.5rem;
     transform: translate3d(0, 0, 0);
     transition: transform 150ms;
+  }
+}
+
+.page-node-type-test .paragraph--type--hero-large.paragraph--view-mode--default  {
+  text-align: center;
+
+  .hero__content-inner  {
+    
+    @include bp-normal {
+      padding: 0;
+      max-width: 760px;
+    }
   }
 }

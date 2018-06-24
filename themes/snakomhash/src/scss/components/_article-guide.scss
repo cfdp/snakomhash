@@ -50,20 +50,14 @@
 
     a {
       color: $text-color;
-      padding: 1.5rem 3rem;
+      padding: 1rem 3rem;
       border-radius: 6rem;
       display: block;
       transition: opacity 250ms ease-in-out;
-      border: 1px solid $text-color;
       text-align: center;
       &:hover {
         text-decoration: none;
         opacity: 0.75;
-      }
-    }
-    &:first-child {
-      a {
-        
       }
     }
   }

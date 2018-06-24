@@ -40,25 +40,24 @@
 #}
 {%
   set classes = [
-    'paragraph',
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    'step__content'
   ]
 %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-    {{ content.field_hero_image }}
-    <div class="hero__content">
-      <div class="hero__content-inner">
-        {{ content.field_label }}
-        {{ content.field_hero_title }}
-        {{ content.field_hero_body }}
-        {% if content.field_hero_link|render|striptags|trim %}
-        <a href="{{ content.field_hero_link[0]['#url'] }}" class="button">
-        {{ content.field_hero_link[0]['#title'] }}
-        </a>
-        {% endif %}
+    {% block content %}
+      <div class="step__intro">
+      {{ content.field_intro }}
       </div>
-    </div>
+      <div class="step__question">
+        <div class="label">Christian råber:</div>
+        {{ content.field_question }}
+      </div>
+      <div class="step__answers">
+        <div class="label">Du svarer:</div>
+        <div class="step__answer"><a href="#" class="correct">{{ content.field_correct_answer }}</a></div>
+        <div class="step__answer"><a href="#" class="incorrect">{{ content.field_wrong_answer }}</a></div>
+      </div>
+    {% endblock %}
   </div>
 {% endblock paragraph %}

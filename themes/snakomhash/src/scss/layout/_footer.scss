@@ -1,4 +1,5 @@
 .footer-container {
+  padding: 0 3rem;
   background: $color-beige;
 
   .region-footer-first,
@@ -13,7 +14,7 @@
     }
   }
   .region-footer-first {
-    padding: 4.5rem 3rem;
+    padding: 4.5rem 0;
     @include clearfix();
 
     @include bp-normal {
@@ -33,10 +34,18 @@
           padding-right: 10%;
         }
       }
+      @include bp-wide {
+        &:last-child {
+          padding-left: 15%;
+        }
+        &:first-child {
+          padding-right: 15%;
+        }
+      }
     }
   }
   .region-footer-second {
-    padding: 3rem 3rem;
+    padding: 3rem 0;
     border-top: 2px solid $color-blue-dark;
     @include clearfix();
     
