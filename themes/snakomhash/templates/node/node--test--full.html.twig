@@ -82,32 +82,14 @@
 %}
 {{ attach_library('classy/node') }}
 
-  {# <div id="slickQuiz">
-    <h1 class="quizName"></h1>
-    <div class="quizArea">
-        <div class="quizHeader">
-            <a class="startQuiz" href="">Get Started!</a>
-        </div>
-    </div>
-    <div class="quizResults">
-        <h3 class="quizScore">You Scored: <span></span></h3>
-        <h3 class="quizLevel"><strong>Ranking:</strong> <span></span></h3>
-        <div class="quizResultsCopy"></div>
-    </div>
-  </div> #}
-
 <article{{ attributes.addClass(classes) }}>
-
-  {{ title_prefix }}
-  {% if not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
-
+  <div class="step-counter">
+    {{ "Step"|t }} <span class="step-counter__current">1</span> {{ "of"|t }} <span class="step-counter__total">{{ content.field_steps['#items']|length }}</span>
+  </div>
+  <h1 class="page-title">
+    {{ label }}
+  </h1>
   <div{{ content_attributes.addClass('node__content', 'text') }}>
     {{ content }}
   </div>
-
 </article>

@@ -47,16 +47,27 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       <div class="step__intro">
-      {{ content.field_intro }}
+      {{ content.field_intro|field_value }}
       </div>
       <div class="step__question">
-        <div class="label">Christian råber:</div>
+        <div class="label">{{ content.field_question_label|field_value }}:</div>
         {{ content.field_question }}
       </div>
       <div class="step__answers">
-        <div class="label">Du svarer:</div>
-        <div class="step__answer"><a href="#" class="correct">{{ content.field_correct_answer }}</a></div>
-        <div class="step__answer"><a href="#" class="incorrect">{{ content.field_wrong_answer }}</a></div>
+        <div class="label">{{ 'Your answer'|t }}:</div>
+          <div class="step__answer"><a href="#" data-answer="correct" class="correct">{{ content.field_correct_answer|field_value }}</a></div>
+          <div class="step__answer"><a href="#" data-answer="incorrect" class="incorrect">{{ content.field_wrong_answer|field_value }}</a></div>
+      </div>
+      <div class="step__responses">
+          <div class="step__chosen"></div>
+          <div class="step__response correct">
+            {{ content.field_correct_response|field_value }}
+            <a href="#" class="next">{{ "Next step"|t }}</a>
+          </div>
+          <div class="step__response incorrect">
+            {{ content.field_wrong_response|field_value }}
+            <a href="#" class="back">{{ "Try again"|t }}</a>
+          </div>
       </div>
     {% endblock %}
   </div>

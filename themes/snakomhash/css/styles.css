@@ -46,7 +46,7 @@ hr {
   margin: 1em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Varela Round", sans-serif;
+  font-family: "Playfair Display", serif;
   line-height: 1.15em;
   font-weight: 900;
   margin-bottom: 1rem;
@@ -1761,8 +1761,21 @@ figure.figure-embed {
       text-decoration: none;
       opacity: 0.75; }
 
+.node--type-test .field--name-field-test-complete {
+  text-align: center;
+  display: none; }
+
+.node--type-test .step-counter {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: .5rem; }
+
 .node--type-test .steps {
   text-align: center; }
+  .node--type-test .steps .step__item {
+    display: none; }
+  .node--type-test .steps #step-1 {
+    display: block; }
   .node--type-test .steps .label {
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -1798,43 +1811,22 @@ figure.figure-embed {
     .node--type-test .steps .step__answers .step__answer a:hover {
       background: #1b3443;
       color: white; }
-
-/* BASE QUIZ STYLES */
-/* These styles ensure that the necessary elements are hidden for toggling */
-/* DO NOT EDIT UNLESS YOU KNOW WHAT YOU ARE DOING!! */
-.startQuiz,
-.nextQuestion,
-.backToQuestion,
-.questions li.question,
-.questions li.question .responses,
-.questions li.question .responses .correct,
-.questions li.question .responses .incorrect,
-.quizResults {
-  display: none; }
-
-/* If response messages are disabled or only shown on quiz completion,
-   nextQuestion button IS checkAnswer button - so it must be displayed */
-.nextQuestion.checkAnswer {
-  display: block; }
-
-ol.questions,
-ul.answers,
-ul.responses,
-ol.questions li,
-ul.answers li,
-ul.responses li {
-  list-style-type: none; }
-
-/* Accessibility */
-.quizName span:first-child {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
+  .node--type-test .steps .step__responses .step__response {
+    display: none; }
+  .node--type-test .steps .step__responses .next,
+  .node--type-test .steps .step__responses .back {
+    margin-top: 3rem;
+    background: transparent;
+    color: #d55342;
+    border: 2px solid #d55342;
+    border-radius: 3rem;
+    padding: 1.5rem 3rem;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: "Playfair Display", serif;
+    color: #1b3443; }
 
 .embedded-entity.bundle-basic h3 {
   color: white;
