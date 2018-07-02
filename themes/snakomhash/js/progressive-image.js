@@ -12,6 +12,15 @@
         }
       }
 
+      if ($('.image-style-hero-1600x800').length) {
+        var img = new Image();
+        var src = $('.image-style-hero-1600x800').attr('src');
+        img.src = src;
+        img.onload = function () {
+          $('.hero-progressive-image').addClass('is-loaded');
+        }
+      }
+
       if ($('.image-style-hero-1600x675').length) {
         var img = new Image();
         var src = $('.image-style-hero-1600x675').attr('src');

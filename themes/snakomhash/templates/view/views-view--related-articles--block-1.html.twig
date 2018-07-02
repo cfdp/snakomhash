@@ -40,15 +40,6 @@
   ]
 %}
 
-<div class="more-link">
-  <a href="{{ path('entity.node.canonical', {'node': 21}) }}">
-    {{ 'See all articles'|t }}
-    <svg class='icon icon-th-menu'>
-      <use xlink:href='/{{ base_path ~ directory }}/assets/svg/symbols.min.svg#arrow-right' />
-    </svg>
-  </a>
-</div>
-
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if title %}

@@ -55,8 +55,10 @@
       </div>
       <div class="step__answers">
         <div class="label">{{ 'Your answer'|t }}:</div>
+        <div class="step__shuffler">
           <div class="step__answer"><a href="#" data-answer="correct" class="correct">{{ content.field_correct_answer|field_value }}</a></div>
           <div class="step__answer"><a href="#" data-answer="incorrect" class="incorrect">{{ content.field_wrong_answer|field_value }}</a></div>
+        </div>
       </div>
       <div class="step__responses">
           <div class="step__chosen"></div>

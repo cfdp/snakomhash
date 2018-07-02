@@ -53,6 +53,15 @@
         plugin.init = function () {
             plugin.state.totalSteps = $('.steps .step__item').length;
 
+            // Shuffle answers.
+            $('.step__shuffler').each(function() {
+                $answers = $('.step__answer', this).sort(function () {
+                    return Math.random() - 0.5;
+                })
+                $(this).html($answers);
+                $(this).parent().fadeIn(plugin.config.animSpeed);
+            });
+            
             // Bind "check answer" buttons
             $('.step__answer a').on('click', function (e) {
                 e.preventDefault();

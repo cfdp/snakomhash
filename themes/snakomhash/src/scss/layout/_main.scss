@@ -91,63 +91,23 @@
   }
 }
 
-.page-node-type-lexicon-article {
+.page-node-type-view-page {
+
+  h1.page-title {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @include bp-narrow {
+    margin-bottom: 8rem;
+    }
+  }
 
   .layout-content {
-    max-width: none;
-    padding: 0;
-  }
-
-  .region-content {
-    padding: 5rem 0 0;
-  }
-
-  #block-altomstoffer-page-title,
-  #block-altomstoffer-local-tasks,
-  .node__intro {
-    box-sizing: border-box;
-    padding: 0 3rem;
+    padding: 4rem 1.5rem;
 
     @include bp-normal {
-      width: 570px;
-      margin: auto;
-      padding: 0;
-    }
-    @include bp-wide {
-      position: relative;
-      left: -120px;
+      padding: 9rem 0;
     }
   }
 
-  .messages {
-    box-sizing: border-box;
-    margin: 0 3rem;
-
-    @include bp-normal {
-      width: 570px;
-      margin: auto;
-    }
-    @include bp-wide {
-      position: relative;
-      left: -120px;
-    }    
-  }
-
-}
-
-.layout-post-content {
-
-  background: $color-grey-light;
-  padding: 5rem 3rem;
-
-  @include bp-normal {
-    padding: 5rem 0;
-  }
-
-  .region-post-content {
-    @include bp-normal {
-      max-width: 570px;
-      margin: auto;
-    }
-  }
 }
