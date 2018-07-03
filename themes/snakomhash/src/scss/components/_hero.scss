@@ -93,7 +93,6 @@
   }
 
   .hero__content-inner {
-
     max-width: 100%;
     position: relative;
     top: 50%;
@@ -172,6 +171,17 @@
   .button {
     margin-top: 3rem;
     @include button(white);
+    display: none;
+    transition: all 250ms;
+
+    &:hover {
+      background: white;
+      color: $text-color;
+    }
+
+    @include bp-narrow {
+      display: inline-block;
+    }
   }
   
   svg {
@@ -204,8 +214,8 @@
     @include bp-normal {
       padding: 0;
       max-width: 760px;
-      top: 60%;
-      transform: translateY(-60%);
+      top: 65%;
+      transform: translateY(-65%);
     }
   }
 }

@@ -19,43 +19,13 @@
 .overlay-content {
   padding: 3rem;
 
-  .overlay-label {
-    text-transform: uppercase;
-    margin-bottom: .5rem;
-    color: $text-color;
-    font-weight: $font-weight-light;
-  }
-
   .field--name-name {
-    font-weight: $font-weight-black;
-    font-size: $font-size-large;
-    color: $text-color;
+    font-weight: $font-weight-bold;
+    font-size: 2.6rem;
+    color: $color-red;
     margin-bottom: 1rem;
+    font-family: $font-fam-head;
   }
-
-  .field--name-field-tags {
-    margin-top: 2rem;
-    @include clearfix();
-    
-    .field__item {
-      float: left;
-      border: 2px solid $color-orange;
-      padding: 0.5rem 1rem;
-      font-size: $font-size-small;
-      text-transform: uppercase;
-      margin-right: .75rem;
-      color: $text-color;
-      transition: all 250ms;
-      cursor: pointer;
-
-      &:hover {
-        background: $text-color;
-        border-color: $text-color;
-        color: white;
-      }
-    }
-  }
-
 }
 
 #colorbox {

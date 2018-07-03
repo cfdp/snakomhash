@@ -7,9 +7,17 @@
     background: $text-color; 
   }
 
+  .site-branding-block {
+    float: left;
+    a {
+      float: left;
+    }
+  }
+
   .icon-logo {
     width: 20rem;
     height: 3rem;
+    float: left;
     fill: $text-color;
 
     @include bp-normal {
@@ -20,13 +28,15 @@
   }
 
   .region-header {
-    padding: 1.5rem 3rem;
+    padding: 2rem 2.25rem 1.55rem;
     display: grid;
     display: -ms-grid;
-    grid-template-columns: 1fr 2fr;
-    -ms-grid-columns: 1fr 2fr;
+    grid-template-columns: 2fr 1fr;
+    -ms-grid-columns: 2fr 1fr;
 
     @include bp-normal {
+      grid-template-columns: 1fr 2fr;
+      -ms-grid-columns: 1fr 2fr;
       position: absolute;
       width: 100%;
       z-index: 10;

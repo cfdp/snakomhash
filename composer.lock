@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2048fb51dde6446cb929ccb249c9bfbb",
+    "content-hash": "af5da92c37a03e17038d949612d77f63",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3127,6 +3127,57 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/menu_block"
             }
+        },
+        {
+            "name": "drupal/menu_firstchild",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/menu_firstchild",
+                "reference": "f2c1f6fa257f1883417003fe4be26f3acc9c9c1c"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1485339185",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Bart Vanhoutte",
+                    "homepage": "https://www.drupal.org/user/1133754",
+                    "email": "bart@croquemonsieur.be"
+                },
+                {
+                    "name": "anrikun",
+                    "homepage": "https://www.drupal.org/user/410199"
+                }
+            ],
+            "description": "A Drupal module that allows creating a menu item without a path that instead will link to it's first viewable child menu item.",
+            "homepage": "http://drupal.org/project/menu_firstchild",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/menu_firstchild",
+                "issues": "http://drupal.org/project/issues/menu_firstchild"
+            },
+            "time": "2017-01-25T10:06:11+00:00"
         },
         {
             "name": "drupal/metatag",
@@ -9122,6 +9173,7 @@
         "drupal-composer/drupal-scaffold": 20,
         "drupal/better_exposed_filters": 15,
         "drupal/views_exclude_previous": 5,
+        "drupal/menu_firstchild": 20,
         "drupal/browsersync": 10,
         "behat/mink": 20,
         "behat/mink-selenium2-driver": 20

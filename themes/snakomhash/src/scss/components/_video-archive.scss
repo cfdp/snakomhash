@@ -3,205 +3,90 @@
 }
 .video--archive {
 
-  .view-header {
-    font-size: $font-size-small;
-  }
-
-  .view-filters {
-    margin: 0 auto 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid $color-grey;
-    position: relative;
-    @include clearfix();
-
-    @include bp-wide {
-      width: 760px;
-    }
-
-    .view-header {
-      position: absolute;
-      top: 0;
-      right: 0;
-      color: $text-color;
-      text-transform: uppercase;
-    }
-
-    fieldset {
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-
-      legend {
-        margin-bottom: 2rem;
-        color: $text-color;
-      }
-    }
-
-    div.form-item {
-        float: left;
-        margin: 0 .75rem .5rem 0;
-
-      label {
-        border: 2px solid $color-orange;
-        padding: 0.5rem 1rem;
-        font-size: $font-size-small;
-        text-transform: uppercase;
-        color: $text-color;
-        transition: all 250ms;
-        margin-bottom: 0;
-        cursor: pointer;
-
-        &:hover {
-          background: $text-color;
-          border-color: $text-color;
-          color: white;
-        }     
-      }
-      input:checked ~ label {
-        background: $text-color;
-        border-color: $text-color;
-        color: white;
-      }
-      input {
-        display: none;
-      }
+  @include bp-normal {
+    .view-content {
+      display: flex;
+      flex-wrap: wrap;
     }
   }
+
   .video__item {
-    width: 100%;
     margin-bottom: 5rem;
     position: relative;
     @include clearfix();
 
     @include bp-normal {
-      width: 365px;
+      width: 32%;
+      margin-right: 2%;
+
+      &:nth-child(3n+5) {
+        margin-right: 0;
+      }
+
+      &:nth-child(1) {
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+      }
+      &:nth-child(2) {
+        width: 49%;
+        float: left;
+        margin-right: 0;
+      }
     }
 
-    @include bp-wide {
-      width: 360px;
+    img {
+      width: 100%;
     }
 
     a {
       display: block;
       cursor: pointer;
     }
-
-    img {
-      position: relative;
-      float: left;
-      width: 100%;
-      opacity: 0.15;
-    } 
   }
 
   .media-video {
     position: relative;
   }
 
-  .bundle {
+  .grid-item__play {
     color: white;
     text-transform: uppercase;
     text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    text-align: right;
+    padding: 2rem;
 
     .icon-play {
       width: 2.25rem;
       height: 2.25rem;
       fill: white;
-      float: left;
-      margin-right: 0.75rem;
-      margin-top: -0.35rem;
+      margin-right: 0.25rem;
+      margin-bottom: -.6rem;
+      display: inline-block;
+    }
+    .field--name-field-video-duration {
+      font-size: 1.4rem;
+      color: white;
+      display: inline-block;
     }
   }
 
   h2 {
-    color: white;
-    margin: 1rem 0;
-    text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
-    font-size: 2.5rem;
+    margin: 1.5rem 0;
+    font-size: 2.6rem;
+    color: $color-red;
+    font-weight: $font-weight-bold;
 
     @include bp-narrow {
       font-size: 3rem;
     }
   }
-  .icon-arrow-right {
-    margin-top: 1rem;
-    width: 3rem;
-    height: 3rem;
-    fill: white;
-  }
-
-  .field--name-field-video-duration {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: $text-color;
-    padding: .5rem 1rem;
-    font-size: 1.4rem;
-    color: white;
-  }
-
-  .grid-item__content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    box-sizing: border-box;
-    width: 100%;
-    color: white;
-    z-index: 11;
-    padding: 3rem;
-  }
 
   .grid-item__description {
-    margin-top: 2rem;
-  }
 
-  .field--name-field-tags {
-    margin-top: 2rem;
-    @include clearfix();
-    
-    .field__item {
-      float: left;
-      border: 2px solid $color-orange;
-      padding: 0.5rem 1rem;
-      font-size: $font-size-small;
-      text-transform: uppercase;
-      margin-right: .75rem;
-      color: $text-color;
-      transition: all 250ms;
-      cursor: pointer;
-
-      &:hover {
-        background: $text-color;
-        border-color: $text-color;
-        color: white;
-      }
-    }
-  }
-
-  .grid-item__background {
-    z-index: 1;
-    backface-visibility: hidden;
-    position: relative;
-    box-shadow: 0;
-    background: $color-orange;
-    @include clearfix();
-
-    @include bp-normal {
-      transform: scale(1); 
-      transition: all 200ms;
-      transition-delay: 0
-    }
-
-    &.color-orange {
-      background: $color-orange;
-    }
-    &.color-cyan {
-      background: $color-green;
-    }
-    &.color-blue {
-      background: $color-blue-dark;
-    }
   }
 }

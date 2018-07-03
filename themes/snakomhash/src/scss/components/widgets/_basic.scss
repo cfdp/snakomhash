@@ -1,24 +1,33 @@
 .embedded-entity.bundle-basic {
 
   h3 {
-    color: white;
     margin-bottom: 2rem;
   }
   p {
-    color: white;
   }
+
+  background: $color-beige;
 
   .inner-content {
     padding: 3rem;
   }
-  .color-cyan {
-    background-color: $color-green;
-  }
-  .color-orange {
-    background-color: $color-orange;
-  }
   .color-blue {
     background-color: $color-blue-dark;
+    h3 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+  .color-red {
+    background-color: $color-red;
+    h3 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
   }
 
   &.align-left {

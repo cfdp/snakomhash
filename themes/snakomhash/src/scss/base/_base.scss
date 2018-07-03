@@ -191,10 +191,10 @@ input[type=button] {
 }
 
 ::-moz-selection {
-  background-color: $color-yellow;
+  background-color: $color-blue-dark;
   color: white;
 }
 ::selection {
-  background-color: $color-yellow;
+  background-color: $color-blue-dark;
   color: white;
 }

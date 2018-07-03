@@ -194,11 +194,11 @@ input[type=button] {
   appearance: none; }
 
 ::-moz-selection {
-  background-color: #efc94c;
+  background-color: #1b3443;
   color: white; }
 
 ::selection {
-  background-color: #efc94c;
+  background-color: #1b3443;
   color: white; }
 
 /* Aligning */

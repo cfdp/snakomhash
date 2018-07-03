@@ -18,10 +18,6 @@
       }
     }
     
-    &:last-child {
-      margin-bottom: 0;
-    }
-
     @include bp-wide {
       margin-bottom: 0;
     }
