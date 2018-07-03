@@ -1919,16 +1919,14 @@ figure.figure-embed {
   .embedded-entity.bundle-basic .inner-content {
     padding: 3rem; }
   .embedded-entity.bundle-basic .color-blue {
-    background-color: #1b3443; }
-    .embedded-entity.bundle-basic .color-blue h3 {
-      color: white; }
-    .embedded-entity.bundle-basic .color-blue p {
+    background-color: #1b3443;
+    color: white; }
+    .embedded-entity.bundle-basic .color-blue h3, .embedded-entity.bundle-basic .color-blue p, .embedded-entity.bundle-basic .color-blue strong {
       color: white; }
   .embedded-entity.bundle-basic .color-red {
-    background-color: #d55342; }
-    .embedded-entity.bundle-basic .color-red h3 {
-      color: white; }
-    .embedded-entity.bundle-basic .color-red p {
+    background-color: #d55342;
+    color: white; }
+    .embedded-entity.bundle-basic .color-red h3, .embedded-entity.bundle-basic .color-red p, .embedded-entity.bundle-basic .color-red strong {
       color: white; }
   @media (min-width: 820px) {
     .embedded-entity.bundle-basic.align-left {
