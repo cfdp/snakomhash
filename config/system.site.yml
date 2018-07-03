@@ -1,0 +1,14 @@
+uuid: 4c1ecde4-13c6-41e6-96dd-60cf49860013
+name: 'Snak om Hash'
+mail: hbt@peytz.dk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/2
+admin_compact_mode: false
+weight_select_max: 100
+langcode: da
+default_langcode: da
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

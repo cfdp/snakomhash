@@ -1,0 +1,42 @@
+uuid: 2e65bedd-3716-4188-b01e-cdc99890e36d
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.related
+    - field.field.node.article.body
+    - field.field.node.article.field_article_author
+    - field.field.node.article.field_article_response
+    - field.field.node.article.field_hero
+    - field.field.node.article.field_intro
+    - node.type.article
+  module:
+    - entity_reference_revisions
+    - user
+id: node.article.related
+targetEntityType: node
+bundle: article
+mode: related
+content:
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: related
+      link: ''
+    third_party_settings: {  }
+  field_intro:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  body: true
+  field_article_author: true
+  field_article_response: true
+  langcode: true
+  links: true

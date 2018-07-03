@@ -1,0 +1,17 @@
+uuid: 944149ce-2161-4261-80e6-64e7241f3caf
+langcode: da
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Udsagn
+type: statement
+description: 'Linker til artikler og bruges i artikelguides.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

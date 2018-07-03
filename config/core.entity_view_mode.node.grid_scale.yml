@@ -1,0 +1,10 @@
+uuid: 5e5e2098-7238-45be-bb58-44a308b11069
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node.grid_scale
+label: 'Grid scale'
+targetEntityType: node
+cache: true

@@ -1,0 +1,33 @@
+uuid: 14806fa6-0920-43ee-aabf-eb8ed316ef41
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.hero
+  module:
+    - ctools
+    - views
+  theme:
+    - snakomhash
+id: views_block__hero_block_2
+theme: snakomhash
+region: hero
+weight: 0
+provider: null
+plugin: 'views_block:hero-block_2'
+settings:
+  id: 'views_block:hero-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      view_page: view_page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

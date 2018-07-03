@@ -1,0 +1,23 @@
+uuid: bb58880a-96af-4c02-889f-1168a5795fea
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.related
+    - field.field.paragraph.hero.field_hero_image
+    - paragraphs.paragraphs_type.hero
+id: paragraph.hero.related
+targetEntityType: paragraph
+bundle: hero
+mode: related
+content:
+  field_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: related
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

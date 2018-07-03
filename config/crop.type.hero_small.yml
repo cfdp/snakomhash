@@ -1,0 +1,12 @@
+uuid: 1e086a9d-490e-41c3-92d6-4244a059f4c2
+langcode: en
+status: true
+dependencies: {  }
+label: 'Hero small'
+id: hero_small
+description: ''
+aspect_ratio: '1600:675'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 1600
+hard_limit_height: 675

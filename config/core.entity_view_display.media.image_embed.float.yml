@@ -1,0 +1,31 @@
+uuid: e3ad5655-811f-40f0-b815-58bf03df25f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.float
+    - field.field.media.image_embed.field_media_image
+    - image.style.embed
+    - media_entity.bundle.image_embed
+  module:
+    - image
+id: media.image_embed.float
+targetEntityType: media
+bundle: image_embed
+mode: float
+content:
+  field_media_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: embed
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

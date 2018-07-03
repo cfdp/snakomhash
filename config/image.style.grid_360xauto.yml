@@ -1,0 +1,15 @@
+uuid: bb2fbec7-b4a3-45f9-bde7-9b53fa2cb109
+langcode: en
+status: true
+dependencies: {  }
+name: grid_360xauto
+label: 'Grid 360xauto'
+effects:
+  e0122bfd-8e85-4b1c-89df-5b81c45d0013:
+    uuid: e0122bfd-8e85-4b1c-89df-5b81c45d0013
+    id: image_scale
+    weight: 1
+    data:
+      width: 360
+      height: null
+      upscale: false

@@ -1,0 +1,10 @@
+uuid: 3f998e44-52e3-4c24-a994-bc9212ba8a7a
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.related
+label: Related
+targetEntityType: paragraph
+cache: true

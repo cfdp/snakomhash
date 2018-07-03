@@ -1,0 +1,18 @@
+uuid: 2d3efd8a-6327-4d2d-8806-b9694288fb0d
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.statement
+id: node.statement.title
+field_name: title
+entity_type: node
+bundle: statement
+label: Udsagn
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

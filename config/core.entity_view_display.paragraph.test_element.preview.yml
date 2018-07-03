@@ -1,0 +1,32 @@
+uuid: dc5f0503-4c8b-42b8-9e68-107d5174d5ca
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.test_element.field_correct_answer
+    - field.field.paragraph.test_element.field_correct_response
+    - field.field.paragraph.test_element.field_intro
+    - field.field.paragraph.test_element.field_question
+    - field.field.paragraph.test_element.field_wrong_answer
+    - field.field.paragraph.test_element.field_wrong_response
+    - paragraphs.paragraphs_type.test_element
+id: paragraph.test_element.preview
+targetEntityType: paragraph
+bundle: test_element
+mode: preview
+content:
+  field_question:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_correct_answer: true
+  field_correct_response: true
+  field_intro: true
+  field_wrong_answer: true
+  field_wrong_response: true

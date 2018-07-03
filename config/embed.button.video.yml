@@ -1,0 +1,23 @@
+uuid: 7849bc43-ddc7-47fb-b79b-e61006a20a37
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.video
+  module:
+    - entity_embed
+    - media_entity
+label: Video
+id: video
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - video
+  display_plugins:
+    - 'view_mode:media.teaser'
+  entity_browser: videos
+  entity_browser_settings:
+    display_review: false
+  inline_entity_edit_enabled: 1
+icon_uuid: null

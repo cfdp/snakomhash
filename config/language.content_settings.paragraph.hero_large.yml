@@ -1,0 +1,11 @@
+uuid: 6a4ec40f-a302-4b70-9218-68c0f1c3415d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.hero_large
+id: paragraph.hero_large
+target_entity_type_id: paragraph
+target_bundle: hero_large
+default_langcode: site_default
+language_alterable: false

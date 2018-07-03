@@ -1,0 +1,12 @@
+uuid: 550eed02-2b1b-49a2-804d-4a7523678df0
+langcode: da
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 6GCOQ-jP2RbdbHA5YWQ6bT8CfGbqrBYKOSC_XY4E3ZM
+id: node.search_result
+label: 'Søgeresultat med fremhævelse af input'
+targetEntityType: node
+cache: true

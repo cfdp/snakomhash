@@ -1,0 +1,18 @@
+uuid: d3e96be2-27ef-4f17-a5dd-0b17ee1ffab6
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonym bruger'
+weight: -10
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use browsersync'
+  - 'use text format restricted_html'
+  - 'view media'

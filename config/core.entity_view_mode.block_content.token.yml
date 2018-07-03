@@ -1,0 +1,10 @@
+uuid: accc525e-ffce-4f37-944a-6119e77a4bd4
+langcode: da
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.token
+label: Token
+targetEntityType: block_content
+cache: true

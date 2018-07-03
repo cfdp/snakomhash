@@ -1,0 +1,74 @@
+uuid: 8b774f58-43a4-4c40-ba0c-6d54da940714
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.test_element.field_correct_answer
+    - field.field.paragraph.test_element.field_correct_response
+    - field.field.paragraph.test_element.field_intro
+    - field.field.paragraph.test_element.field_question
+    - field.field.paragraph.test_element.field_question_label
+    - field.field.paragraph.test_element.field_wrong_answer
+    - field.field.paragraph.test_element.field_wrong_response
+    - paragraphs.paragraphs_type.test_element
+  module:
+    - text
+id: paragraph.test_element.default
+targetEntityType: paragraph
+bundle: test_element
+mode: default
+content:
+  field_correct_answer:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_correct_response:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_intro:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_question:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_question_label:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_wrong_answer:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_wrong_response:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: e5c9db78-4916-4746-a90a-656025d979cb
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.statement
+id: node.statement.sticky
+field_name: sticky
+entity_type: node
+bundle: statement
+label: Klæbrig
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Tilsluttet
+  off_label: Afbrudt
+field_type: boolean

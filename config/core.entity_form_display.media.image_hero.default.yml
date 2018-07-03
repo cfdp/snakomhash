@@ -1,0 +1,51 @@
+uuid: b760d0d9-d5ea-4fda-82df-5c3ce326d8f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image_hero.field_media_image
+    - image.style.thumbnail
+    - media_entity.bundle.image_hero
+  module:
+    - image_widget_crop
+id: media.image_hero.default
+targetEntityType: media
+bundle: image_hero
+mode: default
+content:
+  field_media_image:
+    weight: 1
+    settings:
+      show_default_crop: true
+      preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      progress_indicator: bar
+      crop_list:
+        - grid_1_1
+        - grid_3_2
+        - hero_large
+        - hero_small
+      show_crop_area: false
+      warn_multiple_usages: false
+    third_party_settings: {  }
+    type: image_widget_crop
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  uid: true

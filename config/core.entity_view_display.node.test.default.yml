@@ -1,0 +1,38 @@
+uuid: 4f16f1f0-15d4-4b4d-8d81-5fd8474d0139
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.test.field_hero
+    - field.field.node.test.field_steps
+    - field.field.node.test.field_test_complete
+    - node.type.test
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.test.default
+targetEntityType: node
+bundle: test
+mode: default
+content:
+  field_steps:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_test_complete:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_hero: true
+  langcode: true
+  links: true

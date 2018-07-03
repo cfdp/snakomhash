@@ -1,0 +1,29 @@
+uuid: 68b0ae88-8752-4baa-943c-953c468cc435
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_browser_entity_form
+name: videos
+label: Videos
+display: iframe
+display_configuration:
+  width: '1140'
+  height: '650'
+  link_text: ''
+  auto_open: true
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  697d7c69-3491-49e4-8621-154e68de458f:
+    settings:
+      entity_type: media
+      bundle: video
+      form_mode: default
+      submit_text: Save
+    uuid: 697d7c69-3491-49e4-8621-154e68de458f
+    weight: 1
+    label: New
+    id: entity_form

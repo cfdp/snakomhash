@@ -1,0 +1,27 @@
+uuid: da006a54-6e8a-4401-8cfa-f53a6335f719
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wrong_response
+    - paragraphs.paragraphs_type.test_element
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: paragraph.test_element.field_wrong_response
+field_name: field_wrong_response
+entity_type: paragraph
+bundle: test_element
+label: 'Incorrect response'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

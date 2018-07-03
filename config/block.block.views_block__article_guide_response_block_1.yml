@@ -1,0 +1,33 @@
+uuid: da3bf542-9bd8-42dd-a5f2-f102d3098130
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.article_guide_response
+  module:
+    - ctools
+    - views
+  theme:
+    - snakomhash
+id: views_block__article_guide_response_block_1
+theme: snakomhash
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:article_guide_response-block_1'
+settings:
+  id: 'views_block:article_guide_response-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

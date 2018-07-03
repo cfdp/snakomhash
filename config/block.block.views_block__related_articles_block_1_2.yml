@@ -1,0 +1,33 @@
+uuid: 04b6ce34-30b6-4a69-bfba-27e83fb99b9f
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.related_articles
+  module:
+    - ctools
+    - views
+  theme:
+    - snakomhash
+id: views_block__related_articles_block_1_2
+theme: snakomhash
+region: post_content
+weight: -8
+provider: null
+plugin: 'views_block:related_articles-block_1'
+settings:
+  id: 'views_block:related_articles-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

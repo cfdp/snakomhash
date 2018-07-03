@@ -1,0 +1,12 @@
+uuid: 8d4602f3-558e-422f-b76f-82016901d6c0
+langcode: da
+status: true
+dependencies: {  }
+label: 'Hero medium'
+id: hero_medium
+description: ''
+aspect_ratio: '2:1'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 1600
+hard_limit_height: 800

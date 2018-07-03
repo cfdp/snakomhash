@@ -1,0 +1,14 @@
+uuid: 17f22549-802f-4f71-99fd-d6c635964ea8
+langcode: da
+status: true
+dependencies: {  }
+name: related_700x340
+label: 'Related 700x340'
+effects:
+  b0473ed0-3979-4ade-a2d3-2332cb695ac0:
+    uuid: b0473ed0-3979-4ade-a2d3-2332cb695ac0
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 340

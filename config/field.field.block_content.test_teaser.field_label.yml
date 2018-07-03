@@ -1,0 +1,21 @@
+uuid: 7f9c903d-b45a-4cdd-85b6-3fc86b49383f
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.test_teaser
+    - field.storage.block_content.field_label
+id: block_content.test_teaser.field_label
+field_name: field_label
+entity_type: block_content
+bundle: test_teaser
+label: Label
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 'Test dig selv'
+default_value_callback: ''
+settings: {  }
+field_type: string

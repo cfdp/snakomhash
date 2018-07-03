@@ -1,0 +1,32 @@
+uuid: 460c2bbb-a176-4532-837c-cf6b23c9b7a5
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.view_page.field_hero
+    - field.field.node.view_page.field_view
+    - node.type.view_page
+  module:
+    - user
+    - viewsreference
+id: node.view_page.default
+targetEntityType: node
+bundle: view_page
+mode: default
+content:
+  field_view:
+    weight: 1
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+    third_party_settings: {  }
+    type: viewsreference_formatter
+    region: content
+hidden:
+  field_hero: true
+  langcode: true
+  links: true

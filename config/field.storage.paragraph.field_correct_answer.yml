@@ -1,0 +1,21 @@
+uuid: bcc6c5e5-70b2-4666-a632-e6b6d55fbca2
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_correct_answer
+field_name: field_correct_answer
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,8 @@
+uuid: e016805c-e5f2-46fc-b1f9-f7e3b26f5574
+langcode: da
+status: true
+dependencies: {  }
+id: test_teaser
+label: 'Test teaser'
+revision: 0
+description: ''

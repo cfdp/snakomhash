@@ -1,0 +1,30 @@
+uuid: 35ce872d-a225-4553-b9fc-60a9afa6ac82
+langcode: da
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - snakomhash
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: snakomhash_page_title
+theme: snakomhash
+region: content
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Sidetitel
+  provider: core
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+      test: test
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

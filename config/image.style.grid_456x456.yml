@@ -1,0 +1,24 @@
+uuid: eceac361-9070-403f-b960-3846ef0b950f
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.grid_1_1
+  module:
+    - crop
+name: grid_456x456
+label: 'Grid 456x456'
+effects:
+  8035ef93-f4a9-4ea5-abb8-8dcfdbe860fe:
+    uuid: 8035ef93-f4a9-4ea5-abb8-8dcfdbe860fe
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 456
+      height: 385
+  19adc346-d3a3-4a83-a2c8-1f8924384926:
+    uuid: 19adc346-d3a3-4a83-a2c8-1f8924384926
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: grid_1_1

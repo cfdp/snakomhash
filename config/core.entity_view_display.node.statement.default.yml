@@ -1,0 +1,25 @@
+uuid: 7ab688b9-f51e-4a9a-87d9-7911c7f0a8c9
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.statement.field_article
+    - node.type.statement
+  module:
+    - user
+id: node.statement.default
+targetEntityType: node
+bundle: statement
+mode: default
+content:
+  field_article:
+    weight: 1
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  langcode: true
+  links: true

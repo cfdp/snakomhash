@@ -1,0 +1,31 @@
+uuid: 2fa02078-f418-4cbc-8e80-8a0a0ef6d90b
+langcode: da
+status: true
+dependencies:
+  module:
+    - ctools
+  theme:
+    - snakomhash
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: snakomhash_local_tasks
+theme: snakomhash
+region: content
+weight: -3
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Faner
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      landing_page: landing_page
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'

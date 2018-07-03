@@ -1,0 +1,58 @@
+uuid: ebbfd2d1-2271-4220-916e-2a943fb69ade
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_view
+    - node.type.view_page
+  module:
+    - viewsreference
+id: node.view_page.field_view
+field_name: field_view
+entity_type: node
+bundle: view_page
+label: View
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: 0
+  plugin_types:
+    block: block
+    default: 0
+    page: 0
+    feed: 0
+  preselect_views:
+    landingpage_articles: landingpage_articles
+    video_archive: video_archive
+    article_guide_response: 0
+    block_content: 0
+    comment: 0
+    comments_recent: 0
+    content: 0
+    content_recent: 0
+    files: 0
+    frontpage: 0
+    frontpage_articles: 0
+    frontpage_statements: 0
+    hero: 0
+    media: 0
+    related_articles: 0
+    taxonomy_term: 0
+    user_admin_people: 0
+    video_archive_overlay: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+  enabled_settings:
+    pager: 0
+    argument: 0
+    limit: 0
+    offset: 0
+    title: 0
+field_type: viewsreference

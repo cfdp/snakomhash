@@ -1,0 +1,25 @@
+uuid: 26db6d60-300c-4679-a553-475c6cb116c5
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.grid_3_2
+  module:
+    - crop
+name: hero_teaser
+label: 'Hero teaser'
+effects:
+  d660e224-ed17-4815-99ee-5e839f040ff3:
+    uuid: d660e224-ed17-4815-99ee-5e839f040ff3
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: grid_3_2
+  4a72d836-5c1f-41ca-aa3b-d392f923ed85:
+    uuid: 4a72d836-5c1f-41ca-aa3b-d392f923ed85
+    id: image_scale
+    weight: 2
+    data:
+      width: 100
+      height: null
+      upscale: false

@@ -1,0 +1,34 @@
+uuid: 770b5e34-7d3d-4e97-b212-fd3adc95b68e
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.guide_element.field_guide_article
+    - field.field.paragraph.guide_element.field_guide_text
+    - paragraphs.paragraphs_type.guide_element
+id: paragraph.guide_element.default
+targetEntityType: paragraph
+bundle: guide_element
+mode: default
+content:
+  field_guide_article:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_guide_text:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

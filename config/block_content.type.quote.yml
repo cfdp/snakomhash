@@ -1,0 +1,8 @@
+uuid: e87e3d4b-788d-4156-9343-39ac7bce8a94
+langcode: en
+status: true
+dependencies: {  }
+id: quote
+label: Quote
+revision: 0
+description: 'A quote contains a short text and a source.'

@@ -1,0 +1,19 @@
+uuid: efc5f615-759d-435c-9701-badb0e4123c0
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_question_label
+    - paragraphs.paragraphs_type.test_element
+id: paragraph.test_element.field_question_label
+field_name: field_question_label
+entity_type: paragraph
+bundle: test_element
+label: 'Question label'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

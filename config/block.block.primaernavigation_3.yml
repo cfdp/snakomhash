@@ -1,0 +1,27 @@
+uuid: 2fbee63a-79ba-440a-9f95-2a637e089edb
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - snakomhash
+id: primaernavigation_3
+theme: snakomhash
+region: sidebar
+weight: -9
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Primær navigation'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand: 1
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

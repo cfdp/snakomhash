@@ -1,0 +1,32 @@
+uuid: 82b2118e-1ad4-4d3a-a207-babe37eb6787
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.related_articles
+  module:
+    - node
+    - views
+  theme:
+    - altomstoffer
+id: views_block__related_articles_block_1
+theme: altomstoffer
+region: ''
+weight: 0
+provider: null
+plugin: 'views_block:related_articles-block_1'
+settings:
+  id: 'views_block:related_articles-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

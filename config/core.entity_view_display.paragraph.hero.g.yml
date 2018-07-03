@@ -1,0 +1,23 @@
+uuid: 867019f8-e157-4dc2-9a63-ede04760761a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.g
+    - field.field.paragraph.hero.field_hero_image
+    - paragraphs.paragraphs_type.hero
+id: paragraph.hero.g
+targetEntityType: paragraph
+bundle: hero
+mode: g
+content:
+  field_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: grid_small
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

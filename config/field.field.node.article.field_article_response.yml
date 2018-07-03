@@ -1,0 +1,27 @@
+uuid: 404a2ded-2bb2-49af-8b58-bc9517658852
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_article_response
+    - node.type.article
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: node.article.field_article_response
+field_name: field_article_response
+entity_type: node
+bundle: article
+label: Response
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

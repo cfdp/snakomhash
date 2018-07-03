@@ -1,0 +1,10 @@
+uuid: 26560457-d2e4-470e-8410-2c9f604d14a8
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.grid_large
+label: 'Grid large'
+targetEntityType: media
+cache: true

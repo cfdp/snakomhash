@@ -1,0 +1,22 @@
+uuid: 619f4c77-f78e-434d-8556-93089e3207df
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - snakomhash
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: snakomhash_breadcrumbs
+theme: snakomhash
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Brødkrummer
+  provider: system
+  label_display: '0'
+visibility: {  }

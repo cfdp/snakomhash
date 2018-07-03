@@ -1,0 +1,28 @@
+uuid: d3cee0c3-c37e-46ab-b062-0168ae578d7d
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.test_teaser
+    - field.storage.block_content.body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+id: block_content.test_teaser.body
+field_name: body
+entity_type: block_content
+bundle: test_teaser
+label: Body
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

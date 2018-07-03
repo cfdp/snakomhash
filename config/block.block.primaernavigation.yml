@@ -1,0 +1,27 @@
+uuid: 853a53cf-bee7-4989-9451-81a80be598cd
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - snakomhash
+id: primaernavigation
+theme: snakomhash
+region: footer_first
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: Navigation
+  provider: menu_block
+  label_display: visible
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

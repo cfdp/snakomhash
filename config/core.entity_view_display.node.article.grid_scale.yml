@@ -1,0 +1,42 @@
+uuid: 9274a56c-3746-4758-834c-2a2fdc31e479
+langcode: da
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.grid_scale
+    - field.field.node.article.body
+    - field.field.node.article.field_article_author
+    - field.field.node.article.field_article_response
+    - field.field.node.article.field_hero
+    - field.field.node.article.field_intro
+    - node.type.article
+  module:
+    - entity_reference_revisions
+    - user
+id: node.article.grid_scale
+targetEntityType: node
+bundle: article
+mode: grid_scale
+content:
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: g
+      link: ''
+    third_party_settings: {  }
+  field_intro:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden:
+  body: true
+  field_article_author: true
+  field_article_response: true
+  langcode: true
+  links: true

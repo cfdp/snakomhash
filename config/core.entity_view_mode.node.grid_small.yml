@@ -1,0 +1,10 @@
+uuid: 25ab09c8-1de8-491c-be0f-46474d9dd2df
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.grid_small
+label: 'Grid small'
+targetEntityType: node
+cache: true

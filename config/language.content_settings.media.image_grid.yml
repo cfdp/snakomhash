@@ -1,0 +1,11 @@
+uuid: 623e666a-fe9f-40a1-a8e7-529d90f80676
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.image_grid
+id: media.image_grid
+target_entity_type_id: media
+target_bundle: image_grid
+default_langcode: site_default
+language_alterable: false

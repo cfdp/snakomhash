@@ -1,0 +1,22 @@
+uuid: e5d7b0a7-396a-4d46-a3a6-1c962b316d57
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - snakomhash
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: snakomhash_content
+theme: snakomhash
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Primært sideindhold'
+  provider: system
+  label_display: '0'
+visibility: {  }

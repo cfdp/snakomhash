@@ -1,0 +1,9 @@
+uuid: 4637f270-d6d6-44a2-8456-1252ec8a973b
+langcode: da
+status: true
+dependencies: {  }
+id: test_element
+label: Step
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

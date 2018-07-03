@@ -1,0 +1,21 @@
+uuid: efec8032-9930-4461-8ce1-08867edd4aa1
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Godkendt bruger'
+weight: -9
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use browsersync'
+  - 'use text format basic_html'
+  - 'view media'

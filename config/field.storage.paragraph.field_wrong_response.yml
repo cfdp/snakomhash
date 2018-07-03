@@ -1,0 +1,19 @@
+uuid: dd9a7564-133d-4fd9-8b77-8b307b788070
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_wrong_response
+field_name: field_wrong_response
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

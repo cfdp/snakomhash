@@ -1,0 +1,32 @@
+uuid: d28a973a-981b-46e1-b172-58dc2c9e7f48
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_hero
+    - field.field.node.page.field_view
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - user
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: ''
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_view: true
+  langcode: true
+  links: true

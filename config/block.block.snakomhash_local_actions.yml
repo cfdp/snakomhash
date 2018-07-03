@@ -1,0 +1,20 @@
+uuid: df6720a2-a634-42cf-bb1f-f524bf4e5aad
+langcode: da
+status: true
+dependencies:
+  theme:
+    - snakomhash
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: snakomhash_local_actions
+theme: snakomhash
+region: content
+weight: -1
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primære adminsitratorhandlinger'
+  provider: core
+  label_display: '0'
+visibility: {  }

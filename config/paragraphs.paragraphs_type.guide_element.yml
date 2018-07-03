@@ -1,0 +1,9 @@
+uuid: c6f93cf5-33e5-4331-9616-10909edc8990
+langcode: da
+status: true
+dependencies: {  }
+id: guide_element
+label: Udsagn
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

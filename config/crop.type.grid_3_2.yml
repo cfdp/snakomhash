@@ -1,0 +1,12 @@
+uuid: c9113731-3700-4cba-a645-70947cb9e47a
+langcode: en
+status: true
+dependencies: {  }
+label: 'Grid large'
+id: grid_3_2
+description: ''
+aspect_ratio: '3:2'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 684
+hard_limit_height: 456

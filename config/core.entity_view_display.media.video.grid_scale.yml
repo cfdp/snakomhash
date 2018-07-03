@@ -1,0 +1,56 @@
+uuid: 09339e64-6cb9-4774-9f8d-1afbbd34d9ea
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.grid_scale
+    - field.field.media.video.field_video
+    - field.field.media.video.field_video_description
+    - field.field.media.video.field_video_duration
+    - field.field.media.video.field_video_image
+    - media_entity.bundle.video
+  module:
+    - text
+id: media.video.grid_scale
+targetEntityType: media
+bundle: video
+mode: grid_scale
+content:
+  field_video_description:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_video_duration:
+    type: string
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_video_image:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: grid_scale
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_video: true
+  langcode: true
+  thumbnail: true
+  uid: true

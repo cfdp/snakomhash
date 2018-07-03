@@ -1,0 +1,24 @@
+uuid: 68ed194e-322b-4eaf-95b9-902c61874fb3
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.hero_medium
+  module:
+    - crop
+name: hero_1600x800
+label: 'Hero 1600x800'
+effects:
+  b5364621-8c49-4716-9d26-a448a26df9ff:
+    uuid: b5364621-8c49-4716-9d26-a448a26df9ff
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 1600
+      height: 800
+  ef181a4e-70b8-426a-ae04-307d1b948514:
+    uuid: ef181a4e-70b8-426a-ae04-307d1b948514
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: hero_medium

@@ -1,0 +1,10 @@
+uuid: af524843-c75a-44ff-88c6-80bd4e97489d
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.grid_scale
+label: 'Grid scale'
+targetEntityType: media
+cache: true

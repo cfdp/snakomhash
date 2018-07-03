@@ -1,0 +1,8 @@
+uuid: d07be027-130d-431d-b9e6-f81673c26a5c
+langcode: en
+status: true
+dependencies: {  }
+id: teaser
+label: Teaser
+revision: 0
+description: 'Show a teaser for an existing entity.'

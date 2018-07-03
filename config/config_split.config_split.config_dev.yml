@@ -1,0 +1,18 @@
+uuid: 35f05822-1235-4258-a5fa-3d7bd88d7435
+langcode: da
+status: true
+dependencies: {  }
+id: config_dev
+label: 'Dev config'
+folder: sites/default/config/config_dev
+module:
+  browsersync: 0
+  devel: 0
+  devel_generate: 0
+  kint: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

@@ -1,0 +1,25 @@
+uuid: b1e52c39-1079-4793-8ef2-3d7003bcb54e
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2cd38128-17e7-4b75-aa7b-524edd510257'
+  module:
+    - block_content
+  theme:
+    - snakomhash
+id: footerabout
+theme: snakomhash
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:2cd38128-17e7-4b75-aa7b-524edd510257'
+settings:
+  id: 'block_content:2cd38128-17e7-4b75-aa7b-524edd510257'
+  label: 'Footer about'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

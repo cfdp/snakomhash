@@ -1,0 +1,24 @@
+uuid: eadbda6c-9c40-4c52-b392-e5359b6a1066
+langcode: da
+status: true
+dependencies:
+  config:
+    - crop.type.hero_medium
+  module:
+    - crop
+name: hero_54x27
+label: 'Hero 54x27'
+effects:
+  361c0930-3a69-4d77-9adb-944feba5b737:
+    uuid: 361c0930-3a69-4d77-9adb-944feba5b737
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 54
+      height: 27
+  1a1e4601-aa3d-4821-b97a-26c4366cb742:
+    uuid: 1a1e4601-aa3d-4821-b97a-26c4366cb742
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: hero_medium

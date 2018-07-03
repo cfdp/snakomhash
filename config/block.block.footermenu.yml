@@ -1,0 +1,27 @@
+uuid: 7fa2af1d-1881-40f8-ace8-65a9c83650f8
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.footer-menu
+  module:
+    - menu_block
+  theme:
+    - snakomhash
+id: footermenu
+theme: snakomhash
+region: footer_second
+weight: -9
+provider: null
+plugin: 'menu_block:footer-menu'
+settings:
+  id: 'menu_block:footer-menu'
+  label: 'Footer menu'
+  provider: menu_block
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand: 0
+  parent: 'footer-menu:'
+  suggestion: footer_menu
+visibility: {  }

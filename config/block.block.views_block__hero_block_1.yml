@@ -1,0 +1,26 @@
+uuid: b58420c4-e0cf-4dcd-8733-4ddb5db67827
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.hero
+  module:
+    - views
+  theme:
+    - altomstoffer
+id: views_block__hero_block_1
+theme: altomstoffer
+region: ''
+weight: 0
+provider: null
+plugin: 'views_block:hero-block_1'
+settings:
+  id: 'views_block:hero-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping:
+    parent_id: '@node.node_route_context:node'
+visibility: {  }

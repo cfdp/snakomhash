@@ -1,0 +1,19 @@
+uuid: e535c2e9-b52a-4bc8-ae6a-7f4e85f60689
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_guide_text
+    - paragraphs.paragraphs_type.guide_element
+id: paragraph.guide_element.field_guide_text
+field_name: field_guide_text
+entity_type: paragraph
+bundle: guide_element
+label: Udsagn
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

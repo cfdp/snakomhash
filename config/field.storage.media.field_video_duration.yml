@@ -1,0 +1,21 @@
+uuid: 43f29f11-ade2-4550-9f6b-98476ecaa664
+langcode: da
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.field_video_duration
+field_name: field_video_duration
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 9286ff45-5f59-4584-88b8-8f1d31d77a2a
+langcode: da
+status: true
+dependencies:
+  config:
+    - views.view.footer_statements
+  module:
+    - system
+    - views
+  theme:
+    - snakomhash
+id: views_block__footer_statements_block_1
+theme: snakomhash
+region: post_content
+weight: -7
+provider: null
+plugin: 'views_block:footer_statements-block_1'
+settings:
+  id: 'views_block:footer_statements-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

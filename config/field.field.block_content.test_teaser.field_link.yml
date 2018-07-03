@@ -1,0 +1,23 @@
+uuid: ff8d0867-38ef-4c2f-af6c-386924044914
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.test_teaser
+    - field.storage.block_content.field_link
+  module:
+    - link
+id: block_content.test_teaser.field_link
+field_name: field_link
+entity_type: block_content
+bundle: test_teaser
+label: Button
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

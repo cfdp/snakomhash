@@ -1,0 +1,12 @@
+uuid: 254303ea-0e09-46ea-8ba9-74b77ae2089d
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: -8
+is_admin: null
+permissions:
+  - 'use browsersync'
+  - 'use text format full_html'
+  - 'view media'

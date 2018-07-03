@@ -1,0 +1,11 @@
+uuid: 380b584b-5b1e-4768-be12-01cd01c3a28e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.teaser
+id: block_content.teaser
+target_entity_type_id: block_content
+target_bundle: teaser
+default_langcode: site_default
+language_alterable: false

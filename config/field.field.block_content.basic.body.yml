@@ -1,0 +1,30 @@
+uuid: 66c0c442-88d3-4e72-9c7d-ba5a15f7ef02
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.storage.block_content.body
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    basic_html: basic_html
+    full_html: '0'
+    plain_text: '0'
+_core:
+  default_config_hash: R__6wc-rMfFMO8d7jcgqnqiA92j8spKhcc5MiqecrMc
+id: block_content.basic.body
+field_name: body
+entity_type: block_content
+bundle: basic
+label: Brødtekst
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

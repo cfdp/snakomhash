@@ -1,0 +1,20 @@
+uuid: d39951c5-460f-4008-a07f-5058ae965fa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_hero
+    - node.type.landing_page
+  module:
+    - user
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content: {  }
+hidden:
+  body: true
+  field_hero: true
+  langcode: true
+  links: true

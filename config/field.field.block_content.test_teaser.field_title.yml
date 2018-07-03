@@ -1,0 +1,19 @@
+uuid: dea3e975-8abe-4b2e-8d46-03b50ee4fab9
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.test_teaser
+    - field.storage.block_content.field_title
+id: block_content.test_teaser.field_title
+field_name: field_title
+entity_type: block_content
+bundle: test_teaser
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

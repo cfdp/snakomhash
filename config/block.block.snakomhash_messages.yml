@@ -1,0 +1,22 @@
+uuid: 7eca7dc2-7aa2-4cc2-8a82-0ffd5f13bdf7
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - snakomhash
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: snakomhash_messages
+theme: snakomhash
+region: content
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Statusmeddelelser
+  provider: system
+  label_display: '0'
+visibility: {  }

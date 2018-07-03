@@ -1,0 +1,14 @@
+uuid: 133869ce-695b-4903-a42e-9a619ffc4ccc
+langcode: en
+status: true
+dependencies: {  }
+name: hero_64x27
+label: 'Hero 64x27'
+effects:
+  6c4448d6-5809-4884-8e21-c280a85b1d1e:
+    uuid: 6c4448d6-5809-4884-8e21-c280a85b1d1e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 64
+      height: 27

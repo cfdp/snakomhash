@@ -1,0 +1,10 @@
+uuid: c8635c57-4d38-4f68-9b6e-e05aa7dd6758
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.gir
+label: 'Grid large'
+targetEntityType: paragraph
+cache: true

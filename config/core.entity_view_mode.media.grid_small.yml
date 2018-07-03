@@ -1,0 +1,10 @@
+uuid: d847153f-a199-4642-a816-21778dae65c0
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.grid_small
+label: 'Grid small'
+targetEntityType: media
+cache: true

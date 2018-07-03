@@ -1,0 +1,55 @@
+uuid: d7c01b06-5174-4704-91d6-78a19061ca1b
+langcode: da
+status: true
+dependencies:
+  config:
+    - block_content.type.test_teaser
+    - field.field.block_content.test_teaser.body
+    - field.field.block_content.test_teaser.field_label
+    - field.field.block_content.test_teaser.field_link
+    - field.field.block_content.test_teaser.field_title
+  module:
+    - link
+    - text
+id: block_content.test_teaser.default
+targetEntityType: block_content
+bundle: test_teaser
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_label:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_title:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

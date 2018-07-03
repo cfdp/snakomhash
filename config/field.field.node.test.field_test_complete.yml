@@ -1,0 +1,21 @@
+uuid: 454fe0ad-b7fe-417d-b957-6438da42fc04
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_test_complete
+    - node.type.test
+  module:
+    - text
+id: node.test.field_test_complete
+field_name: field_test_complete
+entity_type: node
+bundle: test
+label: Complete
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

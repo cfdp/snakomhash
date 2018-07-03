@@ -1,0 +1,12 @@
+uuid: 9796f0f3-b4b8-49f2-bf8e-4358b7710693
+langcode: en
+status: true
+dependencies: {  }
+label: 'Grid small'
+id: grid_1_1
+description: ''
+aspect_ratio: '456:385'
+soft_limit_width: null
+soft_limit_height: null
+hard_limit_width: 456
+hard_limit_height: 385

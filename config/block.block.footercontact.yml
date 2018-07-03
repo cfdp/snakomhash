@@ -1,0 +1,25 @@
+uuid: 72d6e00b-f23e-4b74-9d7d-7685a172978a
+langcode: da
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d0079585-7e10-4ea0-af9c-38daf2e7bcce'
+  module:
+    - block_content
+  theme:
+    - snakomhash
+id: footercontact
+theme: snakomhash
+region: footer_second
+weight: -10
+provider: null
+plugin: 'block_content:d0079585-7e10-4ea0-af9c-38daf2e7bcce'
+settings:
+  id: 'block_content:d0079585-7e10-4ea0-af9c-38daf2e7bcce'
+  label: 'Footer contact'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

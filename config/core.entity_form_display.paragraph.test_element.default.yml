@@ -1,0 +1,111 @@
+uuid: 14008b0b-581a-4b11-8581-1bdfb2ac4e6b
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.test_element.field_correct_answer
+    - field.field.paragraph.test_element.field_correct_response
+    - field.field.paragraph.test_element.field_intro
+    - field.field.paragraph.test_element.field_question
+    - field.field.paragraph.test_element.field_question_label
+    - field.field.paragraph.test_element.field_wrong_answer
+    - field.field.paragraph.test_element.field_wrong_response
+    - paragraphs.paragraphs_type.test_element
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_correct:
+      children:
+        - field_correct_answer
+        - field_correct_response
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Correct
+      region: content
+    group_incorrect:
+      children:
+        - field_wrong_answer
+        - field_wrong_response
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Incorrect
+      region: content
+id: paragraph.test_element.default
+targetEntityType: paragraph
+bundle: test_element
+mode: default
+content:
+  field_correct_answer:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_correct_response:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_intro:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_question:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_question_label:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_wrong_answer:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_wrong_response:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

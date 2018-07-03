@@ -1,0 +1,69 @@
+uuid: 9e67f625-dcce-4f93-a381-b924a39fd2bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero_large.field_hero_body
+    - field.field.paragraph.hero_large.field_hero_image
+    - field.field.paragraph.hero_large.field_hero_link
+    - field.field.paragraph.hero_large.field_hero_title
+    - field.field.paragraph.hero_large.field_label
+    - paragraphs.paragraphs_type.hero_large
+  module:
+    - entity_browser_entity_form
+    - inline_entity_form
+    - link
+    - text
+id: paragraph.hero_large.default
+targetEntityType: paragraph
+bundle: hero_large
+mode: default
+content:
+  field_hero_body:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_hero_image:
+    weight: 0
+    settings:
+      form_mode: default
+      label_singular: ''
+      label_plural: ''
+      override_labels: false
+    third_party_settings:
+      entity_browser_entity_form:
+        entity_browser_id: _none
+    type: inline_entity_form_simple
+    region: content
+  field_hero_link:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_hero_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_label:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

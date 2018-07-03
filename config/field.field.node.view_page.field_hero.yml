@@ -1,0 +1,40 @@
+uuid: ce81d6ac-5bf3-42aa-a87c-15057c946a87
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_hero
+    - node.type.view_page
+    - paragraphs.paragraphs_type.hero_large
+  module:
+    - entity_reference_revisions
+id: node.view_page.field_hero
+field_name: field_hero
+entity_type: node
+bundle: view_page
+label: Hero
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      hero_large: hero_large
+    target_bundles_drag_drop:
+      guide_element:
+        weight: 5
+        enabled: false
+      hero:
+        weight: 6
+        enabled: false
+      hero_large:
+        enabled: true
+        weight: 7
+      test_element:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions

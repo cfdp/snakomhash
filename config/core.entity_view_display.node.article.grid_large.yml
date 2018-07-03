@@ -1,0 +1,42 @@
+uuid: 6b1aa1f3-5835-483b-8268-cc5f5922ba5b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.grid_large
+    - field.field.node.article.body
+    - field.field.node.article.field_article_author
+    - field.field.node.article.field_article_response
+    - field.field.node.article.field_hero
+    - field.field.node.article.field_intro
+    - node.type.article
+  module:
+    - entity_reference_revisions
+    - user
+id: node.article.grid_large
+targetEntityType: node
+bundle: article
+mode: grid_large
+content:
+  field_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: gir
+      link: ''
+    third_party_settings: {  }
+  field_intro:
+    type: basic_string
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_article_author: true
+  field_article_response: true
+  langcode: true
+  links: true

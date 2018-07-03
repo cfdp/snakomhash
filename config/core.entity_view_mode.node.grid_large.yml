@@ -1,0 +1,10 @@
+uuid: 72698b90-7dab-4623-a09c-8210d53b9ba8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.grid_large
+label: 'Grid large'
+targetEntityType: node
+cache: true

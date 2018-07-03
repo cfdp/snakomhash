@@ -1,0 +1,10 @@
+uuid: 0695cf78-ff65-4802-bb75-57ed2afd983a
+langcode: en
+status: true
+dependencies:
+  module:
+    - media_entity
+id: media.float
+label: Float
+targetEntityType: media
+cache: true

@@ -1,0 +1,24 @@
+uuid: a0760a89-66ee-4416-853e-c78e95c71d2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - media_entity.bundle.image_embed
+  module:
+    - entity_embed
+    - media_entity
+label: Images
+id: images
+type_id: entity
+type_settings:
+  entity_type: media
+  bundles:
+    - image_embed
+  display_plugins:
+    - 'view_mode:media.float'
+    - 'view_mode:media.full'
+  entity_browser: images
+  entity_browser_settings:
+    display_review: false
+  inline_entity_edit_enabled: 1
+icon_uuid: 79dc329c-f67f-4bfd-a32a-5098fdc578e6

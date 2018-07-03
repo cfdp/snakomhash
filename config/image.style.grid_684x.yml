@@ -1,0 +1,24 @@
+uuid: 2c0b1fc7-a528-4eb7-866a-9f3779eaff4e
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.grid_3_2
+  module:
+    - crop
+name: grid_684x
+label: 'Grid 684x456'
+effects:
+  bf509f3b-4c36-45a0-abe1-f76f97c1dee7:
+    uuid: bf509f3b-4c36-45a0-abe1-f76f97c1dee7
+    id: image_scale_and_crop
+    weight: -9
+    data:
+      width: 684
+      height: 456
+  8859ddc3-46c6-47b8-9576-32336b80d7c2:
+    uuid: 8859ddc3-46c6-47b8-9576-32336b80d7c2
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: grid_3_2

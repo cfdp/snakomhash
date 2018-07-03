@@ -1,0 +1,31 @@
+uuid: a188c481-c1d3-48cc-8c94-7d1648ea7873
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.grid_scale
+    - field.field.media.image_grid.field_media_image
+    - image.style.grid_360xauto
+    - media_entity.bundle.image_grid
+  module:
+    - image
+id: media.image_grid.grid_scale
+targetEntityType: media
+bundle: image_grid
+mode: grid_scale
+content:
+  field_media_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: grid_360xauto
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true
