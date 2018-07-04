@@ -1484,7 +1484,7 @@ figure.figure-embed {
           display: inline;
           line-height: 2.75rem; } }
     .menu-toggle a svg {
-      fill: #d55342;
+      fill: #1b3443;
       float: right;
       width: 2.7rem;
       height: 2.7rem; }
@@ -1816,6 +1816,8 @@ figure.figure-embed {
       @media (min-width: 600px) {
         .related-articles .related-articles__item .grid-item__content h2 {
           font-size: 3.5rem; } }
+    .related-articles .related-articles__item .grid-item__content .field--name-field-intro {
+      display: none; }
 
 .node--type-test .field--name-field-test-complete {
   text-align: center;
