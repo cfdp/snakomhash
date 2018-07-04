@@ -11,14 +11,14 @@
   .color-blue {
     background-color: $color-blue-dark;
     color: white;
-    h3, p, strong {
+    h2, h3, p, strong, ul, ol {
       color: white;
     }
   }
   .color-red {
     background-color: $color-red;
     color: white;
-    h3, p, strong {
+    h2, h3, p, strong, ul, ol {
       color: white;
     }
   }

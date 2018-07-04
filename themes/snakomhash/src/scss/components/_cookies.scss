@@ -32,13 +32,13 @@
     margin-top: 1rem;
     margin-left: 0;
     margin-right: 0;
-    font-size: $font-size-base;
-    @include button($color-orange);
-    font-weight: $font-weight-bold;
-
+    font-size: $font-size-medium;
+    @include button(white, $color-blue-dark);
+    border-color: $color-blue-dark;
 
     &:hover {
-      color: white;
+      color: $color-blue-dark;
+      background: white;
     }
 
     @include bp-normal {

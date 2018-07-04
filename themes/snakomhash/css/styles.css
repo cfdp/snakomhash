@@ -1569,10 +1569,10 @@ figure.figure-embed {
     margin-top: 1rem;
     margin-left: 0;
     margin-right: 0;
-    font-size: 1.6rem;
-    background: transparent;
-    color: #ff8b1e;
-    border: 2px solid #ff8b1e;
+    font-size: 1.5rem;
+    background: #1b3443;
+    color: white;
+    border: 2px solid white;
     border-radius: 3rem;
     padding: 1.5rem 3rem;
     display: inline-block;
@@ -1580,9 +1580,10 @@ figure.figure-embed {
     text-decoration: none;
     font-weight: 700;
     font-family: "Playfair Display", serif;
-    font-weight: 700; }
+    border-color: #1b3443; }
     .cc_banner .button:hover {
-      color: white; }
+      color: #1b3443;
+      background: white; }
     @media (min-width: 820px) {
       .cc_banner .button {
         margin-top: 0;
@@ -1921,12 +1922,12 @@ figure.figure-embed {
   .embedded-entity.bundle-basic .color-blue {
     background-color: #1b3443;
     color: white; }
-    .embedded-entity.bundle-basic .color-blue h3, .embedded-entity.bundle-basic .color-blue p, .embedded-entity.bundle-basic .color-blue strong {
+    .embedded-entity.bundle-basic .color-blue h2, .embedded-entity.bundle-basic .color-blue h3, .embedded-entity.bundle-basic .color-blue p, .embedded-entity.bundle-basic .color-blue strong, .embedded-entity.bundle-basic .color-blue ul, .embedded-entity.bundle-basic .color-blue ol {
       color: white; }
   .embedded-entity.bundle-basic .color-red {
     background-color: #d55342;
     color: white; }
-    .embedded-entity.bundle-basic .color-red h3, .embedded-entity.bundle-basic .color-red p, .embedded-entity.bundle-basic .color-red strong {
+    .embedded-entity.bundle-basic .color-red h2, .embedded-entity.bundle-basic .color-red h3, .embedded-entity.bundle-basic .color-red p, .embedded-entity.bundle-basic .color-red strong, .embedded-entity.bundle-basic .color-red ul, .embedded-entity.bundle-basic .color-red ol {
       color: white; }
   @media (min-width: 820px) {
     .embedded-entity.bundle-basic.align-left {
