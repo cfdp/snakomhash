@@ -28,6 +28,9 @@
     color: white;
     text-decoration: none;
   }
+  a.is-active {
+    color: $text-color;
+  }
 
 }
 

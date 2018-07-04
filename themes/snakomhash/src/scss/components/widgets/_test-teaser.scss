@@ -46,6 +46,12 @@
     a {
       @include button(white);
       padding-top: 1.25rem;
+      transition: all 250ms;
+
+      &:hover {
+        background: white;
+        color: $color-red;
+      }
 
       @include bp-normal {
         font-size: $font-size-small;

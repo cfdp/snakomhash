@@ -39,25 +39,49 @@
   }
 
   .statement-item {
-    margin-bottom: 1rem;
+
+    text-align: center;
 
     @include bp-normal {
+
       font-size: $font-size-small;
     }
     @include bp-wide {
+      padding: 0 3rem;
       font-size: $font-size-base;
+    }
+
+    &:first-child:after {
+      content: "- eller -";
+      display: block;
+      text-align: center;
+      font-family: $font-fam-head;
+      font-style: italic;
+      font-weight: $font-weight-bold;
+      padding: 1rem 0 1.25rem;
     }
 
     a {
       color: $text-color;
-      padding: 1rem 3rem;
-      border-radius: 6rem;
-      display: block;
-      transition: opacity 250ms ease-in-out;
+      display: inline;
       text-align: center;
+      line-height: 2.6rem;
+      transition: all 200ms;
+      box-shadow: 7px 0 0 0 transparent, -7px 0 0 0 transparent;
+      text-decoration: none;
+      padding: 0.35rem 0;
+
+      @include bp-normal {
+        line-height: 2.3rem;
+      }
+      @include bp-wide {
+        line-height: 2.7rem;
+      }
+
       &:hover {
-        text-decoration: none;
-        opacity: 0.75;
+        background: $color-blue-dark;
+        color: white;
+        box-shadow: 7px 0 0 0 $color-blue-dark, -7px 0 0 0 $color-blue-dark;
       }
     }
   }
@@ -97,7 +121,7 @@
     } 
 
   .statement-item {
-    margin-bottom: 1rem;
+    text-align: center;
 
     @include bp-normal {
       font-size: $font-size-small;
@@ -105,17 +129,38 @@
     @include bp-wide {
       font-size: $font-size-base;
     }
+  
+    &:first-child:after {
+      content: "- eller -";
+      display: block;
+      text-align: center;
+      font-family: $font-fam-head;
+      font-style: italic;
+      font-weight: $font-weight-bold;
+      padding: 1rem 0 1.25rem;
+    }
 
     a {
       color: $text-color;
-      padding: 1rem 3rem;
-      border-radius: 6rem;
-      display: block;
-      transition: opacity 250ms ease-in-out;
+      display: inline;
       text-align: center;
+      line-height: 2.6rem;
+      transition: all 200ms;
+      box-shadow: 7px 0 0 0 transparent, -7px 0 0 0 transparent;
+      text-decoration: none;
+      padding: 0.35rem 0;
+
+      @include bp-normal {
+        line-height: 2.3rem;
+      }
+      @include bp-wide {
+        line-height: 2.7rem;
+      }
+
       &:hover {
-        text-decoration: none;
-        opacity: 0.75;
+        background: $color-blue-dark;
+        color: white;
+        box-shadow: 7px 0 0 0 $color-blue-dark, -7px 0 0 0 $color-blue-dark;
       }
     }
   }

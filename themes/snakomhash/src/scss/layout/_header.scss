@@ -1,3 +1,11 @@
+.sidebar-open {
+
+  .header-container .icon-logo {
+    fill: white;
+    position: fixed;
+  }
+}
+
 .header-container {
   background: white;
   position: relative;
@@ -19,6 +27,9 @@
     height: 3rem;
     float: left;
     fill: $text-color;
+    position: relative;
+    z-index: 101;
+    transition: fill 300ms ease-in-out;
 
     @include bp-normal {
       width: 27.5rem;

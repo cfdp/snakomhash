@@ -1,6 +1,6 @@
 .layout-sidebar {
-  background-color: $color-red;
-  background: linear-gradient($color-red 50%, $color-red);
+  background-color: $color-yellow;
+  background: linear-gradient($color-yellow 50%, #e5b335);
   color: white;
   width: 100%;
   height: 100vh;
@@ -10,10 +10,9 @@
   box-sizing: border-box;
   z-index: 100;
   overflow-y: auto;
-
-    visibility: hidden;
-    opacity: 0;
-    transition: all 300ms ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
 
     &.active {
       visibility: visible;
@@ -29,7 +28,7 @@
     width: 3.5rem;
     height: 3.5rem;
     position: absolute;
-    top: 1.5rem;
+    top: 1.4rem;
     right: 2rem;
     @include bp-normal {
       top: 5rem;
