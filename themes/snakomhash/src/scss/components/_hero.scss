@@ -148,23 +148,24 @@
       font-size: 8rem;
     }
   }
-  .field--name-field-hero-body p {
-    color: white;
-    font-size: $font-size-base;
-    font-family: $font-fam-head;
-    line-height: 1.3em;
-    text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
-    display: none;
+  .field--name-field-hero-body {
+    p, h2, h3, h4, h5, h6 {
+      color: white;
+      font-size: $font-size-base;
+      font-family: $font-fam-head;
+      line-height: 1.3em;
+      text-shadow: 0 0 1.2rem rgba(0,0,0,0.35);
+      display: none;
 
-    @include bp-narrow {
-      display: block;
-    }
-
-    @include bp-normal {
-      font-size: 2rem;
-    }
-    @include bp-wide {
-      font-size: $font-size-large;
+      @include bp-narrow {
+        display: block;
+      }
+      @include bp-normal {
+        font-size: 2rem;
+      }
+      @include bp-wide {
+        font-size: $font-size-large;
+      }
     }
   }
 

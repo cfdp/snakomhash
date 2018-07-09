@@ -61,7 +61,10 @@
         </div>
       </div>
       <div class="step__responses">
-          <div class="step__chosen"></div>
+          <div class="step__chosen">
+            <div class="label">{{ 'Your answer'|t }}:</div>
+            <div class="step__chosen-val"></div>
+          </div>
           <div class="step__response correct">
             {{ content.field_correct_response|field_value }}
             <a href="#" class="next">{{ "Next step"|t }}</a>

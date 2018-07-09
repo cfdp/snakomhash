@@ -76,7 +76,8 @@
     @include bp-normal {
       grid-column-start: 1;
       grid-column-end: 13;
-      -ms-grid-column-span: 12;
+      -ms-grid-column-span: 12;        
+      -ms-grid-column: 1;
       background: $color-beige;
       margin-top: -17rem;
       position: relative;

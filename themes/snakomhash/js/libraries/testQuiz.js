@@ -35,14 +35,17 @@
             },
             backToQuestion: function (currentResponse) {
                 var currentStepObj = $('#step-' + plugin.state.currentStep);
-                $(currentResponse).fadeOut(plugin.config.animSpeed, function () {
-                    $('.step__question, .step__answers', currentStepObj).fadeIn(plugin.config.animSpeed);
+                $('.step__responses', currentStepObj).fadeOut(plugin.config.animSpeed, function () {
+                    $(currentResponse).hide();
+                    $('.step__question, .step__answers, .step__intro', currentStepObj).fadeIn(plugin.config.animSpeed);
                 });
             },
-            checkAnswer: function(answer) {
+            checkAnswer: function (answerKey, answerText) {
                 var currentStepObj = $('#step-' + plugin.state.currentStep);
-                $('.step__question, .step__answers', currentStepObj).fadeOut(plugin.config.animSpeed, function() {
-                    $(currentStepObj).find('.step__response.' + answer).fadeIn(plugin.config.animSpeed);
+                $('.step__question, .step__answers, .step__intro', currentStepObj).fadeOut(plugin.config.animSpeed, function() {
+                    $('.step__chosen-val', currentStepObj).html(answerText);
+                    $(currentStepObj).find('.step__response.' + answerKey).show();
+                    $(".step__responses", currentStepObj).fadeIn(plugin.config.animSpeed);
                 });
             },
             setStepCounter: function(step) {
@@ -61,11 +64,11 @@
                 $(this).html($answers);
                 $(this).parent().fadeIn(plugin.config.animSpeed);
             });
-            
+
             // Bind "check answer" buttons
             $('.step__answer a').on('click', function (e) {
                 e.preventDefault();
-                plugin.method.checkAnswer($(this).data('answer'));
+                plugin.method.checkAnswer($(this).data('answer'), $(this).html());
             });
             // Bind "next" buttons
             $('.next').on('click', function (e) {
