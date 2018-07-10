@@ -541,6 +541,12 @@ input[type=button] {
 
 .region-footer-first .block:first-child {
   margin-bottom: 3rem; }
+  .region-footer-first .block:first-child img {
+    max-width: 180px;
+    margin: auto; }
+    @media (min-width: 820px) {
+      .region-footer-first .block:first-child img {
+        max-width: 100%; } }
   @media (min-width: 820px) {
     .region-footer-first .block:first-child {
       margin-bottom: 0; } }
