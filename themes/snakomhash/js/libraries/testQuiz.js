@@ -32,6 +32,11 @@
                     });
                     $('.step-counter').html('');
                 }
+                if ($(window).width() < 820) {
+                    $('html, body').animate({
+                        scrollTop: $(".step-counter").offset().top
+                    }, 1000);
+                }
             },
             backToQuestion: function (currentResponse) {
                 var currentStepObj = $('#step-' + plugin.state.currentStep);
@@ -39,6 +44,11 @@
                     $(currentResponse).hide();
                     $('.step__question, .step__answers, .step__intro', currentStepObj).fadeIn(plugin.config.animSpeed);
                 });
+                if ($(window).width() < 820) {
+                    $('html, body').animate({
+                        scrollTop: $(".step-counter").offset().top
+                    }, 1000);
+                }
             },
             checkAnswer: function (answerKey, answerText) {
                 var currentStepObj = $('#step-' + plugin.state.currentStep);
@@ -47,6 +57,11 @@
                     $(currentStepObj).find('.step__response.' + answerKey).show();
                     $(".step__responses", currentStepObj).fadeIn(plugin.config.animSpeed);
                 });
+                if ($(window).width() < 820) {
+                    $('html, body').animate({
+                        scrollTop: $(".steps").offset().top
+                    }, 1000);
+                }
             },
             setStepCounter: function(step) {
                 $('.step-counter__current').html(step);
